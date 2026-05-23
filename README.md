@@ -1649,14 +1649,14 @@
         charSize: 8,       // font size px
         speed: 0.01,     // rows per frame (higher = faster cascade)
         speedVar: 0.18,     // per-column speed variation
-        trailMin: 90,        // minimum stream length in characters
-        trailMax: 22,       // maximum stream length in characters
+        trailMin: 22,        // minimum stream length in characters
+        trailMax: 90,       // maximum stream length in characters
         headOpacity: 0.55,    // head character opacity (most visible)
         midOpacity: 0.28,    // second character opacity
         tailOpacity: 0.03,    // tail-end opacity (fades to near-invisible)
         mutRate: 0.35,     // probability per frame to mutate a stream character
-        parallaxX: 8,        // max px canvas shift on mouse X
-        parallaxY: 20,       // max px canvas shift on mouse Y
+        parallaxX: 100,        // max px canvas shift on mouse X
+        parallaxY: 100,       // max px canvas shift on mouse Y
       },
       nn: {
         enabled: true,
