@@ -1347,9 +1347,7 @@
           <div class="proj-icon">[*]</div>
           <div class="proj-title" data-i18n="ptitle_paperpilot">PaperPilot</div>
           <div class="proj-sub" data-i18n="psub_paperpilot">Agentic RAG over research papers</div>
-          <p class="proj-desc" data-i18n="pdesc_paperpilot">LangGraph ReAct agent over 25 ArXiv papers (360K tokens,
-            Qdrant). Section-aware chunking, BAAI/bge-reranker-base reranking, arxiv_search fallback tool. RAGAS: Tool
-            Call Accuracy +10% (v1&rarr;v2), Context Precision +23%. Docker stack with Langfuse, Chainlit UI.</p>
+          <p class="proj-desc" data-i18n="pdesc_paperpilot">LangGraph ReAct agent over 50 ArXiv papers (360K tokens, Qdrant). Section-aware chunking, BAAI/bge-reranker-base reranking, arxiv_search fallback, MCP server bonus. v3 RAGAS: Context Precision 0.166 (+93% vs v1), Faithfulness 0.284 (+33%), Definitional CP 0.961. Three-version eval (RAGAS + Tool Call Accuracy + HAIC). Docker stack, Langfuse tracing, Chainlit UI.</p>
           <div class="proj-tags"><span class="tag">LangGraph</span><span class="tag">Qdrant</span><span
               class="tag">RAGAS</span><span class="tag">GPT-4.1-mini</span><span class="tag">Docker</span></div>
         </div>
@@ -1531,6 +1529,22 @@
               class="chip">Godot 4</span><span class="chip">Pygame</span><span class="chip">Canvas API</span><span
               class="chip">KNIME</span><span class="chip">Android APK</span></div>
         </div>
+        <div class="skill-group">
+          <div class="skill-group-label" data-i18n="sg_spoken">SPOKEN LANGUAGES</div>
+          <div class="skill-chips">
+            <span class="chip">Greek &middot; Native</span>
+            <span class="chip">English &middot; C2</span>
+            <span class="chip">Deutsch &middot; B1</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <div class="skill-group-label" data-i18n="sg_extra">FURTHER KNOWLEDGE</div>
+          <div class="skill-chips">
+            <span class="chip" title="ΕΚΠΑ, Oct 2025 &ndash; Jun 2026">UAV Systems Design</span>
+            <span class="chip" title="ΕΚΠΑ, Dec 2025 &ndash; Feb 2026">Business Strategy</span>
+            <span class="chip" title="2025">Digital Marketing</span>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -1546,7 +1560,8 @@
       <div class="edu-grid reveal">
         <div class="edu-card">
           <div class="edu-status"><span class="dot-live"></span> <span data-i18n="edu_msc_status">ONGOING</span></div>
-          <div class="edu-degree" data-i18n="edu_msc_degree">MSc in Computer Science</div>
+          <div class="edu-degree" data-i18n="edu_msc_degree">MSc in Computer Science "Data Science and Artificial
+            Intelligence"</div>
           <div class="edu-school" data-i18n="edu_msc_school">Harokopeio University of Athens (HUA)</div>
           <div class="edu-detail" data-i18n="edu_msc_detail">Sep 2025 - present &nbsp;&middot;&nbsp; submission ~Sep
             2026<br><br>Thesis: <strong>Data-driven Connectivity Prediction and Path Recovery in SD-UAV Networks using
@@ -1698,7 +1713,7 @@
         ptype_telemetry: 'ANDROID APP', ptitle_telemetry: 'Atlas Telemetry', psub_telemetry: 'Companion app for Project Atlas',
         pdesc_telemetry: 'Godot 4 APK (v1.1, 116 MB). MAVLink v2 FSM parser with CRC-16/MCRF4XX. Three modes: USB-C VCP, WiFi UDP 14550, Bluetooth SPP. Retro VFD aesthetic, vector artificial horizon, 300-sample voltage graph (30s at 10Hz), 20-segment current bar (0&ndash;40A).',
         ptype_paperpilot: 'AI / RAG, MSC COURSE', ptitle_paperpilot: 'PaperPilot', psub_paperpilot: 'Agentic RAG over research papers',
-        pdesc_paperpilot: 'LangGraph ReAct agent over 25 ArXiv papers (360K tokens, Qdrant). Section-aware chunking, BAAI/bge-reranker-base reranking, arxiv_search fallback tool. RAGAS: Tool Call Accuracy +10% (v1&rarr;v2), Context Precision +23%. Docker stack with Langfuse, Chainlit UI.',
+        pdesc_paperpilot: 'LangGraph ReAct agent over 50 ArXiv papers (360K tokens, Qdrant). Section-aware chunking, BAAI/bge-reranker-base reranking, arxiv_search fallback, MCP server bonus. v3 RAGAS: Context Precision 0.166 (+93% vs v1), Faithfulness 0.284 (+33%), Definitional CP 0.961. Three-version eval (RAGAS + Tool Call Accuracy + HAIC). Docker stack, Langfuse tracing, Chainlit UI.',
         ptype_sar: 'FULL-STACK SIMULATION', ptitle_sar: 'SAR-UGV Platform', psub_sar: 'Multi-agent SAR on real maps',
         pdesc_sar: 'FastAPI backend, osmnx graph routing, risk-weighted A* with tiered enemy penalties, cKDTree O(log n). Four simultaneous agents, 18 REST endpoints, 0.25&times;&ndash;100&times; playback speed, WGS-84 to UTM projection.',
         ptype_devops: 'CLOUD / DEVOPS, MSC COURSE', ptitle_devops: 'DevOps-Pets', psub_devops: 'K8s CI/CD with Azure deployment',
@@ -1720,11 +1735,11 @@
         mini_yt_title: 'YouTube Downloader', mini_yt_desc: 'HTML/Flask front-end for yt-dlp, YouTube &amp; YouTube Music, playlists, 320kbps MP3.',
         mini_more_title: 'More on the way', mini_more_desc: 'NLP, deep learning, computer vision, and additional MSc coursework not yet published.',
         proj_note: '[ Several projects are still in progress or not yet uploaded. NLP, deep learning experiments, graph and network analysis, and more are coming. ]',
-        sec_skills: 'Skills', sg_lang: 'LANGUAGES', sg_ai: 'AI &amp; MACHINE LEARNING', sg_sys: 'SYSTEMS &amp; EMBEDDED', sg_back: 'BACKEND &amp; DATA', sg_cloud: 'CLOUD &amp; DEVOPS', sg_front: 'FRONTEND &amp; TOOLS',
-        sec_edu: 'Education', edu_msc_status: 'ONGOING', edu_msc_degree: 'MSc in Computer Science', edu_msc_school: 'Harokopeio University of Athens (HUA)',
-        edu_msc_detail: 'Sep 2025 - present &nbsp;&middot;&nbsp; submission ~Sep 2026<br><br>Thesis: <strong>Data-driven Connectivity Prediction and Path Recovery in SD-UAV Networks using Self-Supervised Learning</strong><br><br>Courses: Deep Learning, Computer Vision, NLP &amp; Info Retrieval, Graph &amp; Network Analysis, Machine Learning, Data Mining &amp; Recommender Systems, Applications of DS &amp; AI, Cloud Platforms, Statistics, plus thesis.',
-        edu_bsc_status: 'COMPLETED', edu_bsc_degree: 'BSc in Computer Science', edu_bsc_school: 'Harokopio University of Athens (HUA)',
-        edu_bsc_detail: 'Sep 2021 - Sep 2025 &nbsp;&middot;&nbsp; <strong>Grade 7.05/10</strong><br><br>Thesis: <strong>Σχεδιασμός αλγορίθμων διαχείρισης για μη επανδρωμένα οχήματα για επιχειρήσεις έρευνας και διάσωσης</strong><br>(Algorithm Design for UAV Management in SAR Operations)<br><br>Thesis grade: <strong>10/10</strong>',
+        sec_skills: 'Skills', sg_lang: 'LANGUAGES', sg_ai: 'AI &amp; MACHINE LEARNING', sg_sys: 'SYSTEMS &amp; EMBEDDED', sg_back: 'BACKEND &amp; DATA', sg_cloud: 'CLOUD &amp; DEVOPS', sg_front: 'FRONTEND &amp; TOOLS', sg_spoken: 'SPOKEN LANGUAGES', sg_extra: 'FURTHER KNOWLEDGE',
+        sec_edu: 'Education', edu_msc_status: 'ONGOING', edu_msc_degree: 'MSc in Computer Science "Data Science and Artificial Intelligence"', edu_msc_school: 'Harokopeio University of Athens (HUA)',
+        edu_msc_detail: 'Sep 2025 - present &nbsp;&middot;&nbsp; submission ~Sep 2026<br><br>Thesis: <strong>Data-driven Connectivity Prediction and Path Recovery in SD-UAV Networks using Self-Supervised Learning</strong><br><em>Πρόβλεψη Συνδεσιμότητας και Ανακατασκευή Πορείας σε Δίκτυα Software-Defined UAV με χρήση Self-Supervised Learning</em><br><br>Courses: Deep Learning, Computer Vision, NLP &amp; Info Retrieval, Graph &amp; Network Analysis, Machine Learning, Data Mining &amp; Recommender Systems, Applications of DS &amp; AI, Cloud Platforms, Statistics, plus thesis.',
+        edu_bsc_status: 'COMPLETED', edu_bsc_degree: 'BSc in Computer Science "Informatics and Telematics"', edu_bsc_school: 'Harokopio University of Athens (HUA)',
+        edu_bsc_detail: 'Sep 2021 - Sep 2025 &nbsp;&middot;&nbsp; <strong>Grade 7.05/10</strong><br><br>Thesis: <strong>Σχεδιασμός αλγορίθμων διαχείρισης για μη επανδρωμένα οχήματα για επιχειρήσεις έρευνας και διάσωσης</strong><br>(Design of Management Algorithms for Unmanned Vehicles for Search and Rescue Operations)<br><br>Thesis grade: <strong>10/10</strong>',
         sec_achieve: 'ACHIEVEMENTS',
         ach1_title: 'G. Karabatzos Scholarship', ach1_sub: 'Harokopeio University, awarded for MSc studies',
         ach2_title: 'CS Teaching Certificate', ach2_sub: 'ASEP (Supreme Council for Civil Personnel Selection)',
@@ -1754,7 +1769,7 @@
         ptype_telemetry: 'ΕΦΑΡΜΟΓΗ ANDROID', ptitle_telemetry: 'Atlas Τηλεμετρία', psub_telemetry: 'Companion app για το Project Atlas',
         pdesc_telemetry: 'Godot 4 APK (v1.1, 116 MB). MAVLink v2 FSM parser με CRC-16/MCRF4XX. Τρεις λειτουργίες: USB-C VCP, WiFi UDP 14550, Bluetooth SPP. Retro VFD αισθητική, διανυσματικός τεχνητός ορίζοντας, γράφημα τάσης 300 δειγμάτων (30s στα 10Hz), μπάρα ρεύματος 20 τμημάτων (0&ndash;40A).',
         ptype_paperpilot: 'AI / RAG, ΜΑΘΗΜΑ ΠΜΣ', ptitle_paperpilot: 'PaperPilot', psub_paperpilot: 'Agentic RAG σύστημα για ερευνητικά άρθρα',
-        pdesc_paperpilot: 'LangGraph ReAct agent για 25 άρθρα ArXiv (360K tokens, Qdrant). Section-aware chunking, reranking BAAI/bge-reranker-base, fallback εργαλείο arxiv_search. RAGAS: Tool Call Accuracy +10% (v1→v2), Context Precision +23%. Docker stack με Langfuse, Chainlit UI.',
+        pdesc_paperpilot: 'LangGraph ReAct agent για 50 άρθρα ArXiv (360K tokens, Qdrant). Section-aware chunking, reranking BAAI/bge-reranker-base, fallback arxiv_search, MCP server bonus. v3 RAGAS: Context Precision 0.166 (+93% έναντι v1), Faithfulness 0.284 (+33%), Definitional CP 0.961. Τριπλή αξιολόγηση (RAGAS + Tool Call Accuracy + HAIC). Docker stack, Langfuse tracing, Chainlit UI.',
         ptype_sar: 'FULL-STACK ΠΡΟΣΟΜΟΙΩΣΗ', ptitle_sar: 'Πλατφόρμα SAR-UGV', psub_sar: 'Multi-agent SAR σε πραγματικούς χάρτες',
         pdesc_sar: 'FastAPI backend, δρομολόγηση osmnx, A* με βάρη κινδύνου και τιμωρίες εχθρικών ζωνών, cKDTree O(log n). Τέσσερις ταυτόχρονοι agents, 18 REST endpoints, αναπαραγωγή 0.25&times;&ndash;100&times;, προβολή WGS-84 σε UTM.',
         ptype_devops: 'CLOUD / DEVOPS, ΜΑΘΗΜΑ ΠΜΣ', ptitle_devops: 'DevOps-Pets', psub_devops: 'K8s CI/CD με ανάπτυξη Azure',
@@ -1776,11 +1791,11 @@
         mini_yt_title: 'YouTube Downloader', mini_yt_desc: 'HTML/Flask front-end για yt-dlp, YouTube &amp; YouTube Music, playlist, 320kbps MP3.',
         mini_more_title: 'Περισσότερα έρχονται', mini_more_desc: 'NLP, deep learning, computer vision και επιπλέον εργασίες ΠΜΣ που δεν έχουν δημοσιευτεί ακόμα.',
         proj_note: '[ Αρκετά έργα βρίσκονται σε εξέλιξη ή δεν έχουν ανέβει ακόμα. NLP, πειράματα deep learning, ανάλυση γράφων και δικτύων, και περισσότερα έρχονται. ]',
-        sec_skills: 'Δεξιότητες', sg_lang: 'ΓΛΩΣΣΕΣ', sg_ai: 'ΤΕΧΝΗΤΗ ΝΟΗΜΟΣΥΝΗ &amp; ML', sg_sys: 'ΣΥΣΤΗΜΑΤΑ &amp; ΕΝΣΩΜΑΤΩΜΕΝΑ', sg_back: 'BACKEND &amp; ΔΕΔΟΜΕΝΑ', sg_cloud: 'CLOUD &amp; DEVOPS', sg_front: 'FRONTEND &amp; ΕΡΓΑΛΕΙΑ',
-        sec_edu: 'Εκπαίδευση', edu_msc_status: 'ΣΕ ΕΞΕΛΙΞΗ', edu_msc_degree: 'ΠΜΣ Πληροφορική', edu_msc_school: 'Χαροκόπειο Πανεπιστήμιο Αθηνών (ΧΠΑ)',
-        edu_msc_detail: 'Σεπ 2025 - παρόν &nbsp;&middot;&nbsp; κατάθεση ~Σεπ 2026<br><br>Διπλωματική: <strong>Data-driven Connectivity Prediction and Path Recovery in SD-UAV Networks using Self-Supervised Learning</strong><br><br>Μαθήματα: Deep Learning, Computer Vision, NLP &amp; Ανάκτηση Πληροφορίας, Ανάλυση Γράφων &amp; Δικτύων, Machine Learning, Εξόρυξη Δεδομένων &amp; Συστήματα Συστάσεων, Εφαρμογές Επιστήμης Δεδομένων &amp; ΤΝ, Cloud Πλατφόρμες, Στατιστική, συν διπλωματική.',
-        edu_bsc_status: 'ΟΛΟΚΛΗΡΩΘΗΚΕ', edu_bsc_degree: 'Πτυχίο Πληροφορικής', edu_bsc_school: 'Χαροκόπειο Πανεπιστήμιο Αθηνών (ΧΠΑ)',
-        edu_bsc_detail: 'Σεπ 2021 - Σεπ 2025 &nbsp;&middot;&nbsp; <strong>Βαθμός 7.05/10</strong><br><br>Πτυχιακή: <strong>Σχεδιασμός αλγορίθμων διαχείρισης για μη επανδρωμένα οχήματα για επιχειρήσεις έρευνας και διάσωσης</strong><br><br>Βαθμός πτυχιακής: <strong>10/10</strong>',
+        sec_skills: 'Δεξιότητες', sg_lang: 'ΓΛΩΣΣΕΣ', sg_ai: 'ΤΕΧΝΗΤΗ ΝΟΗΜΟΣΥΝΗ &amp; ML', sg_sys: 'ΣΥΣΤΗΜΑΤΑ &amp; ΕΝΣΩΜΑΤΩΜΕΝΑ', sg_back: 'BACKEND &amp; ΔΕΔΟΜΕΝΑ', sg_cloud: 'CLOUD &amp; DEVOPS', sg_front: 'FRONTEND &amp; ΕΡΓΑΛΕΙΑ', sg_spoken: 'ΟΜΙΛΟΥΜΕΝΕΣ ΓΛΩΣΣΕΣ', sg_extra: 'ΕΠΙΠΛΕΟΝ ΓΝΩΣΕΙΣ',
+        sec_edu: 'Εκπαίδευση', edu_msc_status: 'ΣΕ ΕΞΕΛΙΞΗ', edu_msc_degree: 'ΠΜΣ Πληροφορική "Επιστήμη των Δεδομένων και Τεχνητή Νοημοσύνη"', edu_msc_school: 'Χαροκόπειο Πανεπιστήμιο Αθηνών (ΧΠΑ)',
+        edu_msc_detail: 'Σεπ 2025 - παρόν &nbsp;&middot;&nbsp; κατάθεση ~Σεπ 2026<br><br>Διπλωματική: <strong>Πρόβλεψη Συνδεσιμότητας και Ανακατασκευή Πορείας σε Δίκτυα Software-Defined UAV με χρήση Self-Supervised Learning</strong><br><em>Data-driven Connectivity Prediction and Path Recovery in SD-UAV Networks using Self-Supervised Learning</em><br><br>Μαθήματα: Deep Learning, Computer Vision, NLP &amp; Ανάκτηση Πληροφορίας, Ανάλυση Γράφων &amp; Δικτύων, Machine Learning, Εξόρυξη Δεδομένων &amp; Συστήματα Συστάσεων, Εφαρμογές Επιστήμης Δεδομένων &amp; ΤΝ, Cloud Πλατφόρμες, Στατιστική, συν διπλωματική.',
+        edu_bsc_status: 'ΟΛΟΚΛΗΡΩΘΗΚΕ', edu_bsc_degree: 'Πτυχίο Πληροφορικής "Πληροφορική και Τηλεματική"', edu_bsc_school: 'Χαροκόπειο Πανεπιστήμιο Αθηνών (ΧΠΑ)',
+        edu_bsc_detail: 'Σεπ 2021 - Σεπ 2025 &nbsp;&middot;&nbsp; <strong>Βαθμός 7.05/10</strong><br><br>Πτυχιακή: <strong>Σχεδιασμός αλγορίθμων διαχείρισης για μη επανδρωμένα οχήματα για επιχειρήσεις έρευνας και διάσωσης</strong><br><em>Design of Management Algorithms for Unmanned Vehicles for Search and Rescue Operations</em><br><br>Βαθμός πτυχιακής: <strong>10/10</strong>',
         sec_achieve: 'ΕΠΙΤΕΥΓΜΑΤΑ',
         ach1_title: 'Υποτροφία Γ. Καραμπατζός', ach1_sub: 'Χαροκόπειο Πανεπιστήμιο, βραβεύτηκε για σπουδές ΠΜΣ',
         ach2_title: 'Πιστοποιητικό Διδακτικής Επάρκειας', ach2_sub: 'ΑΣΕΠ (Ανώτατο Συμβούλιο Επιλογής Προσωπικού)',
