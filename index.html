@@ -1167,6 +1167,169 @@
     ::-webkit-scrollbar-thumb:hover {
       background: var(--muted);
     }
+
+    /* ─── CV SECTION ─── */
+    #cv {
+      background: var(--bg2);
+    }
+
+    .cv-actions {
+      display: flex;
+      gap: .75rem;
+      margin-bottom: 1.5rem;
+      flex-wrap: wrap;
+    }
+
+    .cv-print-btn {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: .78rem;
+      letter-spacing: .05em;
+      padding: .5rem 1.25rem;
+      background: var(--accent);
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background .2s, transform .15s;
+    }
+
+    .cv-print-btn:hover {
+      background: #1a50c8;
+      transform: translateY(-1px);
+    }
+
+    .cv-bridge {
+      display: flex;
+      align-items: center;
+      gap: 1.2rem;
+      background: rgba(37, 99, 235, .07);
+      border: 1px solid rgba(37, 99, 235, .22);
+      border-radius: 8px;
+      padding: .9rem 1.2rem;
+      margin-bottom: 1.5rem;
+      font-size: .85rem;
+      color: var(--text2);
+    }
+
+    .cv-qr-box {
+      flex-shrink: 0;
+      width: 66px;
+      height: 66px;
+      background: var(--bg);
+      border: 2px dashed rgba(37, 99, 235, .3);
+      border-radius: 5px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: .53rem;
+      color: var(--faint);
+      text-align: center;
+      line-height: 1.45;
+    }
+
+    .cv-doc { background:#fff; border:1px solid var(--border); border-radius:8px; padding:2rem 2rem; max-width:960px; margin:0 auto; font-family:'Calibri','Trebuchet MS',Arial,sans-serif; font-size:.92rem; line-height:1.45; color:#222; box-shadow:0 4px 24px rgba(0,0,0,.06); }
+    .cv-doc-header { text-align:center; margin-bottom:1rem; padding-bottom:0; border:none; }
+    .cv-doc-name { font-size:2.3rem; font-weight:700; letter-spacing:.04em; color:#1a1a2e; margin-bottom:.3rem; line-height:1.1; font-family:'Calibri',Arial,sans-serif; }
+    .cv-doc-meta { font-size:.84rem; color:#555; display:flex; justify-content:center; flex-wrap:wrap; gap:0; margin-top:.3rem; }
+    .cv-doc-meta a { color:#1155CC; text-decoration:none; }
+    .cv-doc-meta a:hover { text-decoration:underline; }
+    .cv-summary { font-size:.88rem; line-height:1.55; color:#333; margin-bottom:1rem; }
+    .cv-block { margin-bottom:.9rem; break-inside:avoid; }
+    .cv-block-title { font-weight:700; font-style:italic; font-size:.93rem; color:#243b55; border-bottom:1.5px solid #243b55; padding-bottom:2px; margin-bottom:.45rem; font-family:'Calibri',Arial,sans-serif; }
+    .cv-row { display:grid; grid-template-columns:1fr auto; gap:.1rem .8rem; align-items:baseline; margin-bottom:.2rem; }
+    .cv-row-date { font-size:.83rem; color:#666; white-space:nowrap; }
+    .cv-proj-full { margin-bottom:.45rem; font-size:.87rem; line-height:1.42; }
+    .cv-proj-full strong { font-weight:700; }
+    .cv-proj-stack-italic { font-size:.81rem; font-style:italic; color:#555; margin-top:.04rem; }
+    .cv-proj-table { display:grid; grid-template-columns:44% 56%; gap:.07rem .4rem; margin-top:.1rem; }
+    .cv-proj-name { font-weight:700; font-size:.8rem; color:#1a1a2e; line-height:1.4; }
+    .cv-proj-stack-cell { font-size:.79rem; color:#444; line-height:1.4; }
+    .cv-skills-grid { display:grid; grid-template-columns:1fr 1fr; gap:.2rem .7rem; }
+    .cv-skill-cell { font-size:.87rem; color:#333; }
+    .cv-skill-cell strong { font-weight:700; color:#1a1a2e; }
+    .cv-exp-row { display:grid; grid-template-columns:1fr auto; gap:.1rem .8rem; align-items:baseline; margin-bottom:.06rem; }
+    .cv-exp-line { font-size:.87rem; color:#222; }
+    .cv-exp-line strong { font-weight:700; }
+    .cv-exp-date { font-size:.83rem; color:#666; white-space:nowrap; }
+    .cv-exp-desc { font-size:.83rem; color:#444; font-style:italic; margin-bottom:.3rem; }
+    .cv-lang-table { display:grid; grid-template-columns:auto auto; gap:.18rem .8rem; justify-content:start; margin-bottom:.5rem; }
+    .cv-lang-name { font-size:.87rem; color:#555; padding-left:.3rem; }
+    .cv-lang-lvl { font-size:.87rem; color:#333; }
+    .cv-cert-flat { list-style:none; padding:0; display:flex; flex-direction:column; gap:.18rem; margin-top:.3rem; }
+    .cv-cert-flat li { display:grid; grid-template-columns:130px 1fr; gap:.3rem; font-size:.84rem; color:#333; align-items:baseline; }
+    .cv-cert-yr { font-weight:700; color:#243b55; font-size:.84rem; }
+
+    .cv-print-bridge {
+      display: none;
+    }
+
+    @media (max-width:640px) {
+      .cv-doc { padding:1.2rem 1rem; }
+      .cv-proj-table, .cv-skills-grid { grid-template-columns:1fr; }
+      .cv-cert-flat li { grid-template-columns:auto 1fr; }
+      .cv-row, .cv-exp-row { grid-template-columns:1fr; }
+      .cv-row-date, .cv-exp-date { font-size:.79rem; }
+    }
+
+    /* ─── PRINT ─── */
+    @media print {
+      @page {
+        size: A4;
+        margin: 1.5cm;
+      }
+
+      nav,
+      footer,
+      #hero,
+      #about,
+      #projects,
+      #skills,
+      #education,
+      #contact,
+      #horizon-hud,
+      #progress-bar,
+      #binary-canvas,
+      .mobile-menu,
+      .cv-actions,
+      .cv-bridge,
+      .sh {
+        display: none !important;
+      }
+
+      body {
+        background: #fff !important;
+        color: #000 !important;
+        font-size: 9.5pt;
+      }
+
+      #cv {
+        padding: 0 !important;
+        background: #fff !important;
+      }
+
+      #cv>.container {
+        padding: 0 !important;
+        max-width: 100% !important;
+      }
+
+      .cv-doc { border:none !important; box-shadow:none !important; padding:0 !important; max-width:100% !important; margin:0 !important; font-size:9.5pt !important; }
+      .cv-doc-header { border:none !important; }
+      .cv-doc-name { color:#1a1a2e !important; font-size:20pt !important; }
+      .cv-doc-meta, .cv-doc-meta a { color:#444 !important; }
+      .cv-block-title { color:#243b55 !important; border-bottom-color:#243b55 !important; }
+      .cv-row-date, .cv-exp-date, .cv-lang-lvl { color:#666 !important; }
+      .cv-proj-name, .cv-skill-cell strong, .cv-exp-line strong { color:#1a1a2e !important; }
+      .cv-proj-stack-italic, .cv-proj-stack-cell, .cv-skill-cell, .cv-exp-desc, .cv-summary, .cv-cert-flat li { color:#333 !important; }
+      .cv-cert-yr { color:#243b55 !important; }
+      .cv-lang-name { color:#555 !important; }
+      .cv-print-bridge { display:block !important; border-top:1px solid #ccc; margin-top:1.5rem; padding-top:.5rem; font-size:8pt; color:#555 !important; text-align:center; }
+
+      .reveal {
+        opacity: 1 !important;
+        transform: none !important;
+      }
+    }
   </style>
 </head>
 
@@ -1188,6 +1351,7 @@
         <li><a href="#skills" data-i18n="nav_skills">Skills</a></li>
         <li><a href="#education" data-i18n="nav_education">Education</a></li>
         <li><a href="#contact" data-i18n="nav_contact">Contact</a></li>
+        <li><a href="#cv" data-i18n="nav_cv">CV</a></li>
       </ul>
       <button class="lang-btn" id="langBtn">EL</button>
       <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
@@ -1200,6 +1364,7 @@
     <a href="#skills" class="mob-link" data-i18n="nav_skills">Skills</a>
     <a href="#education" class="mob-link" data-i18n="nav_education">Education</a>
     <a href="#contact" class="mob-link" data-i18n="nav_contact">Contact</a>
+    <a href="#cv" class="mob-link" data-i18n="nav_cv">CV</a>
   </div>
 
   <!-- HERO -->
@@ -1593,7 +1758,7 @@
         <div class="achieve-item">
           <div class="achieve-icon">[*]</div>
           <div class="achieve-title" data-i18n="ach2_title">CS Teaching Certificate</div>
-          <div class="achieve-sub" data-i18n="ach2_sub"> </div>
+          <div class="achieve-sub" data-i18n="ach2_sub">ASEP (Supreme Council for Civil Personnel Selection)</div>
         </div>
         <div class="achieve-item">
           <div class="achieve-icon">[*]</div>
@@ -1619,7 +1784,7 @@
       </div>
       <div class="contact-layout">
         <div class="reveal">
-          <p class="contact-heading" data-i18n="contact_heading">Let&rsquo;s build<br>something.</p>
+          <p class="contact-heading" data-i18n="contact_heading">Let&rsquo;s build something.</p>
           <p class="contact-desc" data-i18n="contact_desc">Finishing my MSc and actively looking for <strong>engineering
               roles</strong> in autonomous systems, ML infrastructure, or embedded software. Happy to talk research,
             drones, or backends, reach out through any of these channels.</p>
@@ -1652,6 +1817,90 @@
     </div>
   </section>
 
+  <!-- CV -->
+  <section id="cv">
+    <div class="container">
+
+      <div class="sh reveal">
+        <span class="sh-label">06</span>
+        <h2 class="sh-title" data-i18n="sec_cv">Curriculum Vitae</h2>
+        <div class="sh-rule"></div>
+      </div>
+
+      <div class="cv-actions reveal">
+        <a id="cv-dl-btn" href="CV_Tsilimpokos_English.pdf" download class="btn btn-primary" data-i18n="cv_dl">&#8659; Download CV</a>
+        <a href="https://tsilispyr.github.io/#cv" target="_blank" rel="noopener" class="btn btn-ghost" data-i18n="cv_view_online">View Online &#8599;</a>
+        <a href="#projects" class="btn btn-ghost" data-i18n="cv_to_projects">&#8594; Projects</a>
+        <a href="https://github.com/Tsilispyr" target="_blank" rel="noopener" class="btn btn-ghost"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg> GitHub</a>
+        <button onclick="window.print()" class="btn btn-ghost" data-i18n="cv_print">&#9113; Print</button>
+      </div>
+
+      <div class="cv-doc reveal">
+        <header class="cv-doc-header">
+          <div class="cv-doc-name" data-i18n="cv_fullname">SPYRIDON TSILIMPOKOS</div>
+          <div class="cv-doc-meta">
+            <a href="mailto:s.e.tsilimpokos@gmail.com">s.e.tsilimpokos@gmail.com</a>
+            &nbsp;|&nbsp;<span>6946914831</span>
+            &nbsp;|&nbsp;<span data-i18n="footer_loc">Athens</span>
+            &nbsp;|&nbsp;<a href="https://github.com/Tsilispyr" target="_blank" rel="noopener">github.com/Tsilispyr</a>
+          </div>
+        </header>
+
+        <p class="cv-summary" data-i18n="cv_summary">Graduate in Informatics &amp; Telematics (BSc) (Degree Grade 7.05) and postgraduate student in Data Science &amp; AI (MSc) - Harokopio University. I focus on designing algorithms for autonomous systems, big data pipelines, ML and full-stack development. I adapt quickly to new technologies and work effectively both independently and as part of a team.</p>
+
+        <div class="cv-block">
+          <h3 class="cv-block-title" data-i18n="cv_edu_h">EDUCATION</h3>
+          <div class="cv-row"><div data-i18n="cv_edu_bsc"><strong>BSc Informatics &amp; Telematics</strong> - Harokopio University</div><div class="cv-row-date">Sep 2021 - Sep 2025</div></div>
+          <div class="cv-row"><div data-i18n="cv_edu_msc"><strong>MSc Data Science &amp; AI</strong> - Harokopio University</div><div class="cv-row-date">Oct 2025 - Sep 2026</div></div>
+          <div class="cv-row"><div data-i18n="cv_edu_uas"><em>Design and Development of Unmanned Aerial Systems (UAS)</em> - NKUA</div><div class="cv-row-date">Oct 2025 - Jun 2026</div></div>
+          <div class="cv-row"><div data-i18n="cv_edu_ent"><em>Entrepreneurship and Strategic Planning for the Future in an Environment of Uncertainty</em> - NKUA</div><div class="cv-row-date">Dec 2025 - Feb 2026</div></div>
+        </div>
+
+        <div class="cv-block">
+          <h3 class="cv-block-title" data-i18n="cv_proj_h">KEY PROJECTS (Complete &amp;/or Ongoing)</h3>
+          <div id="cv-projects-list"></div>
+        </div>
+
+        <div class="cv-block">
+          <h3 class="cv-block-title" data-i18n="cv_skills_h">TECHNICAL SKILLS</h3>
+          <div class="cv-skills-grid">
+            <div class="cv-skill-cell"><strong data-i18n="cv_sk_lang">Languages:</strong> Python, Java, R, SQL, JavaScript, C, Shell</div>
+            <div class="cv-skill-cell"><strong>Frameworks:</strong> FastAPI, Flask, Vue.js, Spring REST</div>
+            <div class="cv-skill-cell"><strong>Data/ML:</strong> Spark, Hadoop, KNIME, Scikit-learn, Neo4j</div>
+            <div class="cv-skill-cell"><strong>Infra:</strong> Docker, MinIO, RabbitMQ, PostgreSQL, nginx, Git</div>
+          </div>
+        </div>
+
+        <div class="cv-block">
+          <h3 class="cv-block-title" data-i18n="cv_exp_h">PROFESSIONAL EXPERIENCE</h3>
+          <div class="cv-exp-row"><div class="cv-exp-line" data-i18n="cv_job1_line"><strong>Accounting Office Assistant</strong> - Psimadas Marinos Nikolaos, Agrinio</div><div class="cv-exp-date" data-i18n="cv_job1_d">Jan 2019 - Dec 2021</div></div>
+          <div class="cv-exp-desc" data-i18n="cv_job1_p">Sorting, filing, accounting transactions, secretarial support.</div>
+          <div class="cv-exp-row"><div class="cv-exp-line" data-i18n="cv_job2_line"><strong>Office Employee</strong> - Gameathlon</div><div class="cv-exp-date" data-i18n="cv_job2_d">Nov 2024</div></div>
+          <div class="cv-exp-row"><div class="cv-exp-line" data-i18n="cv_job3_line"><strong>Salesperson</strong> - Retail</div><div class="cv-exp-date" data-i18n="cv_job3_d">Feb 2025</div></div>
+        </div>
+
+        <div class="cv-block">
+          <h3 class="cv-block-title" data-i18n="cv_langcert_h">LANGUAGES &amp; CERTIFICATES</h3>
+          <div class="cv-lang-table">
+            <span class="cv-lang-name" data-i18n="cv_lang_en_f">ENGLISH (Michigan Proficiency)</span><span class="cv-lang-lvl" data-i18n="cv_lang_en_lvl">Fluent</span>
+            <span class="cv-lang-name" data-i18n="cv_lang_de_f">GERMAN (Zertifikat B1)</span><span class="cv-lang-lvl" data-i18n="cv_lang_de_lvl">Intermediate</span>
+          </div>
+          <ul class="cv-cert-flat">
+            <li><span class="cv-cert-yr">2017</span><span data-i18n="cv_cert1">CERTIFICATION ECDL ADVANCED/EXPERT</span></li>
+            <li><span class="cv-cert-yr">2022</span><span data-i18n="cv_cert2">CERTIFICATION Specialist in the use of techniques and tools for Social Media &amp; Marketing</span></li>
+            <li><span class="cv-cert-yr">2025</span><span data-i18n="cv_cert3">Customer First - Hatzi Skevofylaka</span></li>
+            <li><span class="cv-cert-yr">2025</span><span data-i18n="cv_cert4">TIME MANAGEMENT - HATZI FILAX GROUP</span></li>
+            <li><span class="cv-cert-yr">2024 - 2025</span><span data-i18n="cv_cert5">Professional Skills CERTIFICATION, Info Days of the Studies and Career Liaison Office of Harokopio University.</span></li>
+            <li><span class="cv-cert-yr">Dec 2025 - Feb 2026</span><span data-i18n="cv_cert6">Training Program &laquo;Entrepreneurship and Strategic Planning for the Future in an Environment of Uncertainty&raquo; NKUA</span></li>
+            <li><span class="cv-cert-yr">Oct 2025 - Jun 2026</span><span data-i18n="cv_cert7">Training Program &laquo;Design and Development of Unmanned Aerial Systems (UAS)&raquo; NKUA</span></li>
+          </ul>
+        </div>
+
+        <div class="cv-print-bridge">Interactive version: tsilispyr.github.io/#cv</div>
+
+      </div>
+    </div>
+  </section>
   <footer>
     <span>Spyridon Tsilimpokos - <span data-i18n="footer_loc">Athens, Greece</span></span>
     <a href="https://github.com/Tsilispyr" target="_blank" rel="noopener">Tsilispyr.github.io</a>
@@ -1745,12 +1994,36 @@
         edu_bsc_detail: 'Sep 2021 - Sep 2025 &nbsp;&middot;&nbsp; <strong>Grade 7.05/10</strong><br><br>Thesis: <strong>Design of Management Algorithms for Unmanned Vehicles for Search and Rescue Operations</strong><br><em>Σχεδιασμός αλγορίθμων διαχείρισης για μη επανδρωμένα οχήματα για επιχειρήσεις έρευνας και διάσωσης</em><br><br>Βαθμός πτυχιακής: <strong>10/10</strong>',
         sec_achieve: 'ACHIEVEMENTS',
         ach1_title: 'G. Karabatzos Scholarship', ach1_sub: 'Harokopio University, awarded for MSc studies',
-        ach2_title: 'CS Teaching Certificate', ach2_sub: '',
+        ach2_title: 'CS Teaching Certificate', ach2_sub: 'ASEP (Supreme Council for Civil Personnel Selection)',
         ach3_title: 'BSc Thesis 10/10', ach3_sub: 'Multi-vehicle cooperative SAR algorithm design',
         ach4_title: 'BSc Grade 7.05/10', ach4_sub: 'International Hellenic University, Class of 2025',
         sec_contact: 'Contact', contact_heading: 'Let\'s build<br>something.',
         contact_desc: 'Finishing my MSc and actively looking for <strong>engineering roles</strong> in autonomous systems, ML infrastructure, or embedded software. Happy to talk research, drones, or backends, reach out through any of these channels.',
         footer_loc: 'Athens, Greece',
+        nav_cv: 'CV', sec_cv: 'Curriculum Vitae',
+        cv_dl: '&#8659; Download CV', cv_view_online: 'View Online &#8599;', cv_to_projects: '&#8594; Projects', cv_print: '&#9113; Print',
+        cv_fullname: 'SPYRIDON TSILIMPOKOS',
+        cv_summary: 'Graduate in Informatics &amp; Telematics (BSc) (Degree Grade 7.05) and postgraduate student in Data Science &amp; AI (MSc) - Harokopio University. I focus on designing algorithms for autonomous systems, big data pipelines, ML and full-stack development. I adapt quickly to new technologies and work effectively both independently and as part of a team.',
+        cv_edu_h: 'EDUCATION', cv_edu_bsc: '<strong>BSc Informatics &amp; Telematics</strong> - Harokopio University',
+        cv_edu_msc: '<strong>MSc Data Science &amp; AI</strong> - Harokopio University',
+        cv_edu_uas: '<em>Design and Development of Unmanned Aerial Systems (UAS)</em> - NKUA',
+        cv_edu_ent: '<em>Entrepreneurship and Strategic Planning for the Future in an Environment of Uncertainty</em> - NKUA',
+        cv_proj_h: 'KEY PROJECTS (Complete &amp;/or Ongoing)', cv_skills_h: 'TECHNICAL SKILLS', cv_sk_lang: 'Languages:',
+        cv_exp_h: 'PROFESSIONAL EXPERIENCE',
+        cv_job1_line: '<strong>Accounting Office Assistant</strong> - Psimadas Marinos Nikolaos, Agrinio', cv_job1_d: 'Jan 2019 - Dec 2021',
+        cv_job1_p: 'Sorting, filing, accounting transactions, secretarial support.',
+        cv_job2_line: '<strong>Office Employee</strong> - Gameathlon', cv_job2_d: 'Nov 2024',
+        cv_job3_line: '<strong>Salesperson</strong> - Retail', cv_job3_d: 'Feb 2025',
+        cv_langcert_h: 'LANGUAGES &amp; CERTIFICATES',
+        cv_lang_en_f: 'ENGLISH (Michigan Proficiency)', cv_lang_en_lvl: 'Fluent',
+        cv_lang_de_f: 'GERMAN (Zertifikat B1)', cv_lang_de_lvl: 'Intermediate',
+        cv_cert1: 'CERTIFICATION ECDL ADVANCED/EXPERT',
+        cv_cert2: 'CERTIFICATION Specialist in the use of techniques and tools for Social Media &amp; Marketing',
+        cv_cert3: 'Customer First - Hatzi Skevofylaka',
+        cv_cert4: 'TIME MANAGEMENT - HATZI FILAX GROUP',
+        cv_cert5: 'Professional Skills CERTIFICATION, Info Days of the Studies and Career Liaison Office of Harokopio University.',
+        cv_cert6: 'Training Program &laquo;Entrepreneurship and Strategic Planning for the Future in an Environment of Uncertainty&raquo; NKUA',
+        cv_cert7: 'Training Program &laquo;Design and Development of Unmanned Aerial Systems (UAS)&raquo; NKUA',
         roles: ['Software Engineer', 'ML Researcher', 'Drone Builder', 'Embedded Systems Dev']
       },
       el: {
@@ -1801,17 +2074,116 @@
         edu_bsc_detail: 'Σεπ 2021 - Σεπ 2025 &nbsp;&middot;&nbsp; <strong>Βαθμός 7.05/10</strong><br><br>Πτυχιακή: <strong>Σχεδιασμός αλγορίθμων διαχείρισης για μη επανδρωμένα οχήματα για επιχειρήσεις έρευνας και διάσωσης</strong><br><em>Design of Management Algorithms for Unmanned Vehicles for Search and Rescue Operations</em><br><br>Βαθμός πτυχιακής: <strong>10/10</strong>',
         sec_achieve: 'ΕΠΙΤΕΥΓΜΑΤΑ',
         ach1_title: 'Υποτροφία Γ. Καραμπατζός', ach1_sub: 'Χαροκόπειο Πανεπιστήμιο, βραβεύτηκε για σπουδές ΠΜΣ',
-        ach2_title: 'Πιστοποιητικό Διδακτικής Επάρκειας', ach2_sub: '',
+        ach2_title: 'Πιστοποιητικό Διδακτικής Επάρκειας', ach2_sub: 'ΑΣΕΠ (Ανώτατο Συμβούλιο Επιλογής Προσωπικού)',
         ach3_title: 'Πτυχιακή 10/10', ach3_sub: 'Σχεδιασμός αλγορίθμων για συνεργατικά UAV σε SAR επιχειρήσεις',
         ach4_title: 'Βαθμός Πτυχίου 7.05/10', ach4_sub: 'Χαροκόπειο Πανεπιστήμιο Αθηνών, τάξη 2025',
-        sec_contact: 'Επικοινωνία', contact_heading: 'Ας χτίσουμε<br>κάτι μαζί.',
+        sec_contact: 'Επικοινωνία', contact_heading: 'Ας χτίσουμε κάτι μαζί.',
         contact_desc: 'Ολοκληρώνω το ΠΜΣ μου και αναζητώ ενεργά <strong>θέσεις μηχανικού</strong> σε αυτόνομα συστήματα, ML infrastructure ή ενσωματωμένο λογισμικό. Χαίρομαι να συζητήσω για έρευνα, drones ή backends.',
         footer_loc: 'Αθήνα, Ελλάδα',
+        nav_cv: 'CV', sec_cv: 'Βιογραφικό Σημείωμα',
+        cv_dl: '&#8659; Λήψη CV', cv_view_online: 'Δες Online &#8599;', cv_to_projects: '&#8594; Έργα', cv_print: '&#9113; Εκτύπωση',
+        cv_fullname: 'ΣΠΥΡΙΔΩΝ ΤΣΙΛΙΜΠΩΚΟΣ',
+        cv_summary: 'Απόφοιτος Πληροφορικής &amp; Τηλεματικής (BSc) (Βαθμός Πτυχίου 7,05) και μεταπτυχιακός φοιτητής Επιστήμης Δεδομένων &amp; ΤΝ (MSc) - Χαροκόπειο Πανεπιστήμιο. Εστιάζω στο σχεδιασμό αλγορίθμων αυτόνομων συστημάτων, big data pipelines, ML και full-stack ανάπτυξη. Προσαρμόζομαι γρήγορα σε νέες τεχνολογίες και εργάζομαι αποτελεσματικά τόσο ανεξάρτητα όσο και ομαδικά.',
+        cv_edu_h: 'ΕΚΠΑΙΔΕΥΣΗ', cv_edu_bsc: '<strong>BSc Πληροφορική &amp; Τηλεματική</strong> - Χαροκόπειο Πανεπιστήμιο',
+        cv_edu_msc: '<strong>MSc Επιστήμη Δεδομένων &amp; ΤΝ</strong> - Χαροκόπειο Πανεπιστήμιο',
+        cv_edu_uas: '<em>Σχεδίαση και Ανάπτυξη Μη-Επανδρωμένων Εναέριων Συστημάτων (UAS)</em> - ΕΚΠΑ',
+        cv_edu_ent: '<em>Επιχειρηματικότητα και Διαμόρφωση Στρατηγικής για το Μέλλον σε Περιβάλλον Αβεβαιότητας</em> - ΕΚΠΑ',
+        cv_proj_h: 'ΒΑΣΙΚΑ PROJECTS (Ολοκληρωμένα &amp;/ή σε Εξέλιξη)', cv_skills_h: 'ΤΕΧΝΙΚΕΣ ΔΕΞΙΟΤΗΤΕΣ', cv_sk_lang: 'Γλώσσες:',
+        cv_exp_h: 'ΕΠΑΓΓΕΛΜΑΤΙΚΗ ΕΜΠΕΙΡΙΑ',
+        cv_job1_line: '<strong>Βοηθός Λογιστικού Γραφείου</strong> - Ψειμαδάς Μαρίνος Νικόλαος, Αγρίνιο', cv_job1_d: 'Ιαν 2019 - Δεκ 2021',
+        cv_job1_p: 'Ταξινόμηση, αρχειοθέτηση, λογιστικές συναλλαγές, γραμματειακή υποστήριξη.',
+        cv_job2_line: '<strong>Υπάλληλος Γραφείου</strong> - Gameathlon', cv_job2_d: 'Νοε 2024',
+        cv_job3_line: '<strong>Πωλητής</strong> - Λιανικό εμπόριο', cv_job3_d: 'Φεβ 2025',
+        cv_langcert_h: 'ΓΛΩΣΣΕΣ &amp; ΠΙΣΤΟΠΟΙΗΤΙΚΑ',
+        cv_lang_en_f: 'ΑΓΓΛΙΚΑ (proficiency Michigan)', cv_lang_en_lvl: 'Άπταιστα',
+        cv_lang_de_f: 'ΓΕΡΜΑΝΙΚΑ (Zertifikat B1)', cv_lang_de_lvl: 'Μέτρια',
+        cv_cert1: 'ΠΙΣΤΟΠΟΙΗΣΗ ECDL ADVANCED/EXPERT',
+        cv_cert2: 'ΠΙΣΤΟΠΟΙΗΣΗ Ειδικός στη χρήση τεχνικών και εργαλείων Social Media &amp; Marketing',
+        cv_cert3: 'Customer First - Χάτζη Σκευοφύλακα',
+        cv_cert4: 'TIME MANAGEMENT - HATZI FILAX GROUP',
+        cv_cert5: 'ΠΙΣΤΟΠΟΙΗΣΗ Επαγγελματικών Δεξιοτήτων Info Days Γραφείου Διασύνδεσης Σπουδών και Σταδιοδρομίας του Χαροκοπείου Πανεπιστημίου.',
+        cv_cert6: 'Πρόγραμμα Επιμόρφωσης &laquo;Επιχειρηματικότητα και Διαμόρφωση Στρατηγικής για το Μέλλον σε Περιβάλλον Αβεβαιότητας&raquo; ΕΚΠΑ',
+        cv_cert7: 'Πρόγραμμα Επιμόρφωσης &laquo;Σχεδίαση και Ανάπτυξη Μη-Επανδρωμένων Εναέριων Συστημάτων (UAS)&raquo; ΕΚΠΑ',
         roles: ['Μηχανικός Λογισμικού', 'Ερευνητής ML', 'Κατασκευαστής Drone', 'Ενσωματωμένα Συστήματα']
       }
     };
 
-    //  Typewriter 
+    //  CV Projects ─
+    const cvProjects = [
+      { t_en:'SAR UMS Simulation Platform', t_el:'SAR UMS Simulation Platform',
+        d_en:'Full-stack simulator of autonomous search &amp; rescue vehicles on real OSM maps.',
+        d_el:'Full-stack προσομοιωτής αυτόνομων οχημάτων έρευνας &amp; διάσωσης σε πραγματικούς χάρτες OSM.',
+        stack:'FastAPI | Python | Docker | A* Pathfinding | NetworkX | Leaflet.js | Chart.js | OpenStreetMap' },
+      { t_en:'AudioWeb', t_el:'AudioWeb',
+        d_en:'YouTube to MP3 conversion platform with cloud library, in-browser player &amp; WebGL visualizer.',
+        d_el:'Πλατφόρμα μετατροπής YouTube σε MP3 με cloud βιβλιοθήκη, in-browser player &amp; WebGL visualizer.',
+        stack:'Flask | MinIO (S3) | PostgreSQL | Docker | yt-dlp | Web Audio API | Butterchurn' },
+      { t_en:'Thesis (10/10):', t_el:'Πτυχιακή (10/10):',
+        d_en:'Algorithms for managing unmanned vehicles for search &amp; rescue missions.',
+        d_el:'Αλγόριθμοι διαχείρισης μη-επανδρωμένων οχημάτων για αποστολές έρευνας &amp; διάσωσης.',
+        stack:'' },
+      { t_en:'Big Data - Entity Resolution (Grade 9)', t_el:'Big Data - Entity Resolution (Βαθμός 9)',
+        d_en:'', d_el:'', stack:'PySpark | Jaccard Similarity | F1 > 0.87' },
+      { t_en:'Graph DB &amp; ETL - Shakespeare (Grade 9)', t_el:'Graph DB &amp; ETL - Shakespeare (Βαθμός 9)',
+        d_en:'', d_el:'', stack:'Neo4j | Cypher | Spark SQL | Docker' },
+      { t_en:'ML - Netflix Recommendation System (Grade 9)', t_el:'ML - Netflix Recommendation System (Βαθμός 9)',
+        d_en:'', d_el:'', stack:'Python | TF-IDF | K-Means | Isolation Forest' },
+      { t_en:'Data Mining - Air Traffic Prediction (Grade 10)', t_el:'Data Mining - Air Traffic Prediction (Βαθμός 10)',
+        d_en:'', d_el:'', stack:'KNIME | Random Forest | GBT | ~79% accuracy' },
+      { t_en:'Distributed Systems - Crowdfunding (46.5/50)', t_el:'Κατανεμημένα Συστήματα - Crowdfunding (46.5/50)',
+        d_en:'', d_el:'', stack:'Vue.js | REST API | Backend/Frontend split' },
+      { t_en:'DevOps - Pet Adoption Platform (Grade 10)', t_el:'DevOps - Pet Adoption Platform (Βαθμός 10)',
+        d_en:'', d_el:'', stack:'Docker | RabbitMQ | MinIO | Admin UI' },
+      { t_en:'AI - Pacman Agents (Grade 10)', t_el:'ΤΝ - Pacman Agents (Βαθμός 10)',
+        d_en:'', d_el:'', stack:'Search Algorithms | Python | Autonomous Agents' },
+      { t_en:'CVD Risk Prediction - ATTICA Study (Grade 9)', t_el:'CVD Risk Prediction - ATTICA Study (Βαθμός 9)',
+        d_en:'', d_el:'', stack:'R | Logistic Regression | PCA | AUC 0.917' },
+      { t_en:'Agentic RAG', t_el:'Agentic RAG',
+        d_en:'', d_el:'', stack:'Python | LangGraph | Chainlit | Qdrant | Docker' },
+      { t_en:'CV - Computer Vision', t_el:'CV - Computer Vision',
+        d_en:'', d_el:'', stack:'Python | PyTorch | OpenCV | U-Net | CNN | ViT | SSIM' },
+      { t_en:'Graph Classification - ENZYMES', t_el:'Graph Classification - ENZYMES',
+        d_en:'', d_el:'', stack:'Python | PyTorch Geometric | GCN | GIN | Node2Vec' },
+      { t_en:'NLP &amp; IR - Reddit Clustering', t_el:'NLP &amp; IR - Reddit Clustering',
+        d_en:'', d_el:'', stack:'Python | TF-IDF | LSA | Word2Vec | Sentence Transformers | HDBSCAN' },
+      { t_en:'MLP from Scratch', t_el:'MLP from Scratch',
+        d_en:'', d_el:'', stack:'Python | NumPy | Backpropagation | BCE Loss | Skip Connection' },
+      { t_en:'Food-11 Image Classification', t_el:'Food-11 Image Classification',
+        d_en:'', d_el:'', stack:'Python | PyTorch | CNN | ResNet50 | VGG16 | DenseNet121' },
+      { t_en:'Attention &amp; Transformer Analysis', t_el:'Attention &amp; Transformer Analysis',
+        d_en:'', d_el:'', stack:'Python | NumPy | PyTorch | HuggingFace | BERT | Self/Cross-Attention' },
+    ];
+
+    function renderCVProjects() {
+      const el = document.getElementById('cv-projects-list');
+      if (!el) return;
+      const l = (typeof lang !== 'undefined') ? lang : 'en';
+      const top = cvProjects.slice(0, 3);
+      const rest = cvProjects.slice(3);
+      let html = '';
+      top.forEach(p => {
+        const title = l === 'en' ? p.t_en : p.t_el;
+        const desc  = l === 'en' ? p.d_en : p.d_el;
+        html += '<div class="cv-proj-full"><div><strong>' + title + '</strong>' +
+          (desc ? ' - ' + desc : '') + '</div>' +
+          (p.stack ? '<div class="cv-proj-stack-italic">' + p.stack + '</div>' : '') +
+          '</div>';
+      });
+      html += '<div class="cv-proj-table">';
+      rest.forEach(p => {
+        const title = l === 'en' ? p.t_en : p.t_el;
+        html += '<div class="cv-proj-name">' + title + '</div>';
+        html += '<div class="cv-proj-stack-cell">' + p.stack + '</div>';
+      });
+      html += '</div>';
+      el.innerHTML = html;
+      const dlBtn = document.getElementById('cv-dl-btn');
+      if (dlBtn) {
+        const file = l === 'en' ? 'CV_Tsilimpokos_English.pdf' : 'CV_Tsilimpokos.pdf';
+        dlBtn.href = file; dlBtn.setAttribute('download', file);
+      }
+    }
+    //  Typewriter
     const typedEl = document.getElementById('typed');
     let ri = 0, ci = 0, del = false, typeTimer = null;
     function restartTypewriter() {
@@ -1827,7 +2199,7 @@
       typeTimer = setTimeout(typeStep, t);
     }
 
-    //  Language switch ─
+    //  Language switch
     let lang = localStorage.getItem('lang') || 'en';
     const langBtn = document.getElementById('langBtn');
     function applyLang(l) {
@@ -1840,6 +2212,7 @@
         if (T[l][key] !== undefined) el.innerHTML = T[l][key];
       });
       restartTypewriter();
+      renderCVProjects();
     }
     langBtn.addEventListener('click', () => applyLang(lang === 'en' ? 'el' : 'en'));
     applyLang(lang);
