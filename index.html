@@ -1324,6 +1324,12 @@
       .cv-cert-yr { color:#243b55 !important; }
       .cv-lang-name { color:#555 !important; }
       .cv-print-bridge { display:block !important; border-top:1px solid #ccc; margin-top:1.5rem; padding-top:.5rem; font-size:8pt; color:#555 !important; text-align:center; }
+      .cv-block { break-inside: avoid !important; }
+      .cv-proj-table { grid-template-columns: 40% 60% !important; gap:.04rem .25rem !important; }
+      .cv-proj-name { font-size:8.5pt !important; }
+      .cv-proj-stack-cell { font-size:8pt !important; }
+      .cv-proj-full { font-size:8.5pt !important; }
+      .cv-skills-grid { grid-template-columns: 1fr 1fr !important; }
 
       .reveal {
         opacity: 1 !important;
@@ -1828,7 +1834,7 @@
       </div>
 
       <div class="cv-actions reveal">
-        <a id="cv-dl-btn" href="CV_Tsilimpokos_English.pdf" download class="btn btn-primary" data-i18n="cv_dl">&#8659; Download CV</a>
+        <a id="cv-dl-btn" href="CV_Tsilimpokos_English.pdf" download="CV_Tsilimpokos_English.pdf" class="btn btn-primary" data-i18n="cv_dl">&#8659; Download CV</a>
         <a href="https://tsilispyr.github.io/#cv" target="_blank" rel="noopener" class="btn btn-ghost" data-i18n="cv_view_online">View Online &#8599;</a>
         <a href="#projects" class="btn btn-ghost" data-i18n="cv_to_projects">&#8594; Projects</a>
         <a href="https://github.com/Tsilispyr" target="_blank" rel="noopener" class="btn btn-ghost"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg> GitHub</a>
@@ -2179,8 +2185,9 @@
       el.innerHTML = html;
       const dlBtn = document.getElementById('cv-dl-btn');
       if (dlBtn) {
-        const file = l === 'en' ? 'CV_Tsilimpokos_English.pdf' : 'CV_Tsilimpokos.pdf';
-        dlBtn.href = file; dlBtn.setAttribute('download', file);
+        const filename = l === 'en' ? 'CV_Tsilimpokos_English.pdf' : 'CV_Tsilimpokos.pdf';
+        dlBtn.href = filename;
+        dlBtn.setAttribute('download', filename);
       }
     }
     //  Typewriter
