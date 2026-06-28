@@ -1758,7 +1758,7 @@
           <p data-i18n="about_p1">I'm a Computer Science graduate from HUA,
             currently finishing my MSc at Harokopio University. My thesis tackles connectivity prediction and path
             recovery in GPS-denied UAV swarms, combining self-supervised LSTM dead reckoning with PPO reinforcement
-            learning. Submission is roughly 4 months out.</p>
+            learning. Submission is roughly 2 months out.</p>
           <p data-i18n="about_p2">The drone work goes all the way down: I assembled a quadcopter from bare components,
             wrote its flight controller firmware in C++ from scratch (Madgwick AHRS, cascade PID, DShot600 via DMA),
             then built the Android telemetry app for it in Godot 4 with a full MAVLink v2 FSM parser.</p>
@@ -2173,10 +2173,11 @@
           <div class="edu-status"><span class="dot-done"></span> <span data-i18n="edu_bsc_status">COMPLETED</span></div>
           <div class="edu-degree" data-i18n="edu_bsc_degree">BSc in Computer Science</div>
           <div class="edu-school" data-i18n="edu_bsc_school">Harokopio University of Athens (HUA)</div>
-          <div class="edu-detail" data-i18n="edu_bsc_detail">Sep 2021 - Sep 2025 &nbsp;&middot;&nbsp; 
+          <div class="edu-detail" data-i18n="edu_bsc_detail">Sep 2021 - Sep 2025 &nbsp;&middot;&nbsp;
             <br><br>Thesis: <strong>Σχεδιασμός αλγορίθμων διαχείρισης για μη επανδρωμένα οχήματα για
               επιχειρήσεις έρευνας και διάσωσης</strong><br>(Algorithm Design for UAV Management in SAR
-            Operations)<br><br>Thesis grade: <strong>10/10</strong></div>
+            Operations)<br><br>Thesis grade: <strong>10/10</strong>
+          </div>
         </div>
       </div>
       <p style="font-family:'JetBrains Mono',monospace;font-size:0.7rem;color:var(--faint);letter-spacing:0.1em;margin-bottom:1rem;"
@@ -2190,7 +2191,7 @@
         <div class="achieve-item">
           <div class="achieve-icon">[*]</div>
           <div class="achieve-title" data-i18n="ach2_title">CS Teaching Certificate</div>
-          <div class="achieve-sub" data-i18n="ach2_sub">ASEP (Supreme Council for Civil Personnel Selection)</div>
+          <!-- <div class="achieve-sub" data-i18n="ach2_sub">ASEP (Supreme Council for Civil Personnel Selection)</div> -->
         </div>
         <div class="achieve-item">
           <div class="achieve-icon">[*]</div>
@@ -2429,7 +2430,7 @@
         hero_desc: 'I build autonomous systems end-to-end, from <strong>bare-metal drone firmware in C++</strong> to <strong>self-supervised LSTM models for GPS-denied UAV swarm recovery</strong>. Fresh out of university, looking for the right team to build something meaningful.',
         pill_msc: 'MSC CANDIDATE', pill_drone: 'DRONE BUILDER', pill_ml: 'ML RESEARCH', btn_projects: 'View Projects',
         sec_about: 'About',
-        about_p1: 'I\'m a Computer Science graduate from HUA, currently finishing my MSc at Harokopio University. My thesis tackles connectivity prediction and path recovery in GPS-denied UAV swarms, combining self-supervised LSTM dead reckoning with PPO reinforcement learning. Submission is roughly 4 months out.',
+        about_p1: 'I\'m a Computer Science graduate from HUA, currently finishing my MSc at Harokopio University. My thesis tackles connectivity prediction and path recovery in GPS-denied UAV swarms, combining self-supervised LSTM dead reckoning with PPO reinforcement learning. Submission is roughly 2 months out.',
         about_p2: 'The drone work goes all the way down: I assembled a quadcopter from bare components, wrote its flight controller firmware in C++ from scratch (Madgwick AHRS, cascade PID, DShot600 via DMA), then built the Android telemetry app for it in Godot 4 with a full MAVLink v2 FSM parser.',
         about_p3: 'On the software side I\'ve delivered full-stack web platforms, agentic RAG pipelines, Kubernetes-backed CI/CD infrastructure, real-time audio DSP tools, and graph-based multi-agent SAR simulations. I work most naturally at the intersection of <strong>embedded systems, applied ML, and backend engineering</strong>.',
         about_p4: 'I\'m strongly AI-driven in how I work, using it as a force multiplier for ideation, analysis, and implementation, while grounding decisions in the underlying theory. My instinct is to find practical improvements, orchestrate systems that hold together, and make things accessible even to less experienced users. In a workplace, I aim to put real skills to the test, learn the team\'s workflow deeply, and grow from there.',
@@ -2441,33 +2442,33 @@
         pdesc_atlas: 'FlyfishRC Atlas 4 LR deadcat frame (173mm), Teensy 4.1 (600MHz Cortex-M7), MPU6050, BMP280, QMC5883L, GM10 GPS, GEPRC Taker E55 ESC, ELRS EP1 Dual @ 420kbaud. Custom firmware: Madgwick6DOF AHRS (&beta;=0.04), cascade PID (100Hz angle / 1kHz rate loop via IntervalTimer ISR), DShot600 over DMA.',
         ptype_telemetry: 'ANDROID APP', ptitle_telemetry: 'Atlas Telemetry', psub_telemetry: 'Companion app for Project Atlas',
         pdesc_telemetry: 'Godot 4 APK (v1.1, 116 MB). MAVLink v2 FSM parser with CRC-16/MCRF4XX. Three modes: USB-C VCP, WiFi UDP 14550, Bluetooth SPP. Retro VFD aesthetic, vector artificial horizon, 300-sample voltage graph (30s at 10Hz), 20-segment current bar (0&ndash;40A).',
-        ptype_paperpilot: 'AI / RAG, MSC COURSE', ptitle_paperpilot: 'PaperPilot', psub_paperpilot: 'Agentic RAG over research papers',
+        ptype_paperpilot: 'AI / RAG', ptitle_paperpilot: 'PaperPilot', psub_paperpilot: 'Agentic RAG over research papers',
         pdesc_paperpilot: 'LangGraph ReAct agent over 50 ArXiv papers (360K tokens, Qdrant). Section-aware chunking, BAAI/bge-reranker-base reranking, arxiv_search fallback, MCP server bonus. v3 RAGAS: Context Precision 0.166 (+93% vs v1), Faithfulness 0.284 (+33%), Definitional CP 0.961. Three-version eval (RAGAS + Tool Call Accuracy + HAIC). Docker stack, Langfuse tracing, Chainlit UI.',
         ptype_sar: 'FULL-STACK SIMULATION', ptitle_sar: 'SAR-UGV Platform', psub_sar: 'Multi-agent SAR on real maps',
         pdesc_sar: 'FastAPI backend, osmnx graph routing, risk-weighted A* with tiered enemy penalties, cKDTree O(log n). Four simultaneous agents, 18 REST endpoints, 0.25&times;&ndash;100&times; playback speed, WGS-84 to UTM projection.',
-        ptype_devops: 'CLOUD / DEVOPS, MSC COURSE', ptitle_devops: 'DevOps-Pets', psub_devops: 'K8s CI/CD with Azure deployment',
+        ptype_devops: 'CLOUD / DEVOPS', ptitle_devops: 'DevOps-Pets', psub_devops: 'K8s CI/CD with Azure deployment',
         pdesc_devops: 'Kubernetes (Kind) provisioned via Ansible, automated Jenkins CI/CD, PostgreSQL, MinIO, MailHog, HTTPS via cert-manager + Let\'s Encrypt. Azure VM and AKS cloud deployment. Single-command setup for local, VM, or cloud environments.',
         ptype_audioweb: 'FULL-STACK, SELF-HOSTED', ptitle_audioweb: 'AudioWeb', psub_audioweb: 'Self-hosted music streaming',
         pdesc_audioweb: 'Flask 3.0, PostgreSQL, MinIO, Docker Compose. yt-dlp with bgutil headless Chromium PO-token auth, 320kbps MP3. React 18/Vite frontend, 10-band EQ (&plusmn;12dB, Q=1.2 biquad), 10 Canvas visualisation modes, 2048-sample FFT.',
-        ptype_netflix: 'ML, MSC COURSE', ptitle_netflix: 'Netflix Recommendation System', psub_netflix: 'Content-based filtering with Explainable AI',
+        ptype_netflix: 'MACHINE LEARNING', ptitle_netflix: 'Netflix Recommendation System', psub_netflix: 'Content-based filtering with Explainable AI',
         pdesc_netflix: 'TF-IDF over director, cast, genre, and description on 8000+ Netflix titles. Cosine similarity with 3x genre weighting, sanitised cast names to resolve metadata overlap. K-Means (15 clusters) + PCA 2D visualisation maps the full catalogue. XAI layer surfaces why each recommendation fired (shared director, cast, or genre). Age-rating classification explored to 61% ceiling, explained as a data quality ceiling rather than model failure.',
         ptype_bigdata: 'DATA ANALYSIS, GITHUB', ptitle_bigdata: 'Big Data Analysis', psub_bigdata: 'Apache Spark text indexing and entity resolution',
         pdesc_bigdata: 'Apache Spark pipeline in Scala and PySpark. Phase 1: inverted index and word-frequency analysis over large text corpora (RDD-based). Phase 2: entity resolution across heterogeneous datasets (FODORS&ndash;ZAGAT restaurants, DBLP&ndash;ACM citations) &ndash; token blocking, Jaccard similarity, Precision/Recall/F1 evaluation.',
-        ptype_datamine: 'DATA MINING, MSC COURSE', ptitle_datamine: 'Passenger Traffic Prediction', psub_datamine: 'SF Airport, 38 893 records, 2000-2022',
+        ptype_datamine: 'DATA MINING', ptitle_datamine: 'Passenger Traffic Prediction', psub_datamine: 'SF Airport, 38 893 records, 2000-2022',
         pdesc_datamine: '5-class classification on historical airport data. KNIME pipeline: IQR outlier removal, stratified 70/30 split, seven algorithms benchmarked. Best ensemble (Random Forest + GBT voting): <strong>78.9% accuracy</strong>.',
-        ptype_attica: 'STATISTICS, MSC COURSE', ptitle_attica: 'Attica Health Study Analysis', psub_attica: '20-year epidemiological cohort, CVD risk modelling',
+        ptype_attica: 'STATISTICS', ptitle_attica: 'Attica Health Study Analysis', psub_attica: '20-year epidemiological cohort, CVD risk modelling',
         pdesc_attica: 'R-based statistical analysis of the ATTICA Study cohort. Logistic regression for 10-year and 20-year CVD outcomes, Pearson correlation heatmap, boxplots stratified by outcome, skewness and VIF multicollinearity diagnostics, pROC for ROC/AUC evaluation. Auto-generated multi-page PDF report via ggplot2, with safe-mode package bootstrapping for reproducibility.',
         ptype_bscthesis: 'ACADEMIC, BSC THESIS', ptitle_bscthesis: 'BSc Thesis - SAR Simulation', psub_bscthesis: 'Grade 10/10, multi-vehicle cooperative SAR',
         pdesc_bscthesis: 'Python/Pygame cooperative simulation (~1 763 lines). 25&times;20 grid, three vehicle types, six cooperative scenarios, A* with terrain costs, three search patterns (Expanding Square, Sector, Parallel Track), fog-of-war, JSON stats export.',
-        ptype_graphdb: 'GRAPH DATABASE, MSC COURSE', ptitle_graphdb: 'Graph DB &amp; ETL - Shakespeare', psub_graphdb: 'Neo4j graph modeling and Spark ETL on Shakespeare dataset, Grade 9',
-        ptype_crowdfund: 'DISTRIBUTED SYSTEMS, MSC COURSE', ptitle_crowdfund: 'Distributed Systems - Crowdfunding', psub_crowdfund: 'Vue.js + REST API full-stack crowdfunding platform, 46.5/50',
-        ptype_pacman: 'AI / ALGORITHMS, BSC COURSE', ptitle_pacman: 'AI - Pacman Agents', psub_pacman: 'Search algorithm agents for Pac-Man',
-        ptype_compvision: 'COMPUTER VISION, MSC COURSE', ptitle_compvision: 'CV - Computer Vision', psub_compvision: 'Segmentation, classification and reconstruction with neural networks',
-        ptype_graphclass: 'GRAPH NEURAL NETWORK, MSC COURSE', ptitle_graphclass: 'Graph Classification - ENZYMES', psub_graphclass: 'GNN-based protein graph classification on the ENZYMES dataset',
-        ptype_nlpcluster: 'NLP / IR, MSC COURSE', ptitle_nlpcluster: 'NLP &amp; IR - Reddit Clustering', psub_nlpcluster: 'Multi-model text clustering pipeline on Reddit posts',
-        ptype_mlpscr: 'DEEP LEARNING, MSC COURSE', ptitle_mlpscr: 'MLP from Scratch', psub_mlpscr: 'Multilayer perceptron built from scratch with NumPy backpropagation',
-        ptype_food11: 'IMAGE CLASSIFICATION, MSC COURSE', ptitle_food11: 'Food-11 Image Classification', psub_food11: 'Transfer learning comparison on 11-class food recognition dataset',
-        ptype_transformer: 'ATTENTION / NLP, MSC COURSE', ptitle_transformer: 'Attention &amp; Transformer Analysis', psub_transformer: 'Self-attention and BERT attention mechanism implementation and analysis',
+        ptype_graphdb: 'GRAPH DATABASE', ptitle_graphdb: 'Graph DB &amp; ETL - Shakespeare', psub_graphdb: 'Neo4j graph modeling and Spark ETL on Shakespeare dataset, Grade 9',
+        ptype_crowdfund: 'DISTRIBUTED SYSTEMS', ptitle_crowdfund: 'Distributed Systems - Crowdfunding', psub_crowdfund: 'Vue.js + REST API full-stack crowdfunding platform, 46.5/50',
+        ptype_pacman: 'AI / ALGORITHMS', ptitle_pacman: 'AI - Pacman Agents', psub_pacman: 'Search algorithm agents for Pac-Man',
+        ptype_compvision: 'COMPUTER VISION', ptitle_compvision: 'CV - Computer Vision', psub_compvision: 'Segmentation, classification and reconstruction with neural networks',
+        ptype_graphclass: 'GRAPH NEURAL NETWORK', ptitle_graphclass: 'Graph Classification - ENZYMES', psub_graphclass: 'GNN-based protein graph classification on the ENZYMES dataset',
+        ptype_nlpcluster: 'TEXT MINING / CLUSTERING', ptitle_nlpcluster: 'NLP &amp; IR - Reddit Clustering', psub_nlpcluster: 'Multi-model text clustering pipeline on Reddit posts',
+        ptype_mlpscr: 'DEEP LEARNING', ptitle_mlpscr: 'MLP from Scratch', psub_mlpscr: 'Multilayer perceptron built from scratch with NumPy backpropagation',
+        ptype_food11: 'IMAGE CLASSIFICATION', ptitle_food11: 'Food-11 Image Classification', psub_food11: 'Transfer learning comparison on 11-class food recognition dataset',
+        ptype_transformer: 'TRANSFORMERS / ATTENTION', ptitle_transformer: 'Attention &amp; Transformer Analysis', psub_transformer: 'Self-attention and BERT attention mechanism implementation and analysis',
         mini_vis_title: 'Python Audio Visualiser', mini_vis_desc: 'WASAPI loopback, NumPy rfft 2048-sample, 200 bars 20Hz-22kHz, 60FPS Pygame.',
         mini_yolo_title: 'YOLOv8 Live Detection', mini_yolo_desc: 'YOLOv8l, OpenCV 1280&times;720, agnostic NMS, polygon zone monitoring via Supervision.',
         mini_yt_title: 'YouTube Downloader', mini_yt_desc: 'HTML/Flask front-end for yt-dlp, YouTube &amp; YouTube Music, playlists, 320kbps MP3.',
@@ -2518,7 +2519,7 @@
         hero_desc: 'Αναπτύσσω αυτόνομα συστήματα εξαρχής, από <strong>firmware ελεγκτή πτήσης σε C++</strong> έως <strong>αυτο-εποπτευόμενα μοντέλα LSTM για ανάκτηση σμήνους UAV χωρίς GPS</strong>. Μόλις αποφοίτησα, αναζητώ την κατάλληλη ομάδα για να χτίσουμε κάτι σημαντικό.',
         pill_msc: 'ΥΠΟΨ. ΠΜΣ', pill_drone: 'ΚΑΤΑΣΚΕΥΗ DRONE', pill_ml: 'ΈΡΕΥΝΑ ML', btn_projects: 'Δες τα Έργα',
         sec_about: 'Σχετικά',
-        about_p1: 'Είμαι πτυχιούχος Πληροφορικής από το Χαροκόπειο Πανεπιστήμιο Αθηνών και ολοκληρώνω το ΠΜΣ μου στο Χαροκόπειο Πανεπιστήμιο Αθηνών. Η διπλωματική μου ασχολείται με την πρόβλεψη συνδεσιμότητας και την ανάκτηση διαδρομής σε δίκτυα UAV χωρίς GPS, συνδυάζοντας αυτο-εποπτευόμενη εκμάθηση LSTM με ενισχυτική μάθηση PPO. Η κατάθεση αναμένεται σε περίπου 4 μήνες.',
+        about_p1: 'Είμαι πτυχιούχος Πληροφορικής από το Χαροκόπειο Πανεπιστήμιο Αθηνών και ολοκληρώνω το ΠΜΣ μου στο Χαροκόπειο Πανεπιστήμιο Αθηνών. Η διπλωματική μου ασχολείται με την πρόβλεψη συνδεσιμότητας και την ανάκτηση διαδρομής σε δίκτυα UAV χωρίς GPS, συνδυάζοντας αυτο-εποπτευόμενη εκμάθηση LSTM με ενισχυτική μάθηση PPO. Η κατάθεση αναμένεται σε περίπου 2 μήνες.',
         about_p2: 'Η δουλειά με τα drone φτάνει μέχρι τα βασικά: συναρμολόγησα τετρακόπτερο από μηδέν, έγραψα το firmware του ελεγκτή πτήσης εξαρχής σε C++ (Madgwick AHRS, cascade PID, DShot600 μέσω DMA), και ανέπτυξα την Android εφαρμογή τηλεμετρίας σε Godot 4 με πλήρη MAVLink v2 FSM parser.',
         about_p3: 'Στο λογισμικό, έχω παραδώσει full-stack πλατφόρμες, agentic RAG pipelines, CI/CD υποδομή με Kubernetes, εργαλεία audio DSP σε πραγματικό χρόνο, και γραφοθεωρητικές προσομοιώσεις SAR. Εργάζομαι πιο φυσικά στην τομή <strong>ενσωματωμένων συστημάτων, εφαρμοσμένης ML και backend engineering</strong>.',
         about_p4: 'Στον τρόπο που εργάζομαι χρησιμοποιώ έντονα την ΤΝ ως πολλαπλασιαστή δυνάμεων για ιδέες, ανάλυση και υλοποίηση, στηρίζοντας πάντα τις αποφάσεις στην υποκείμενη θεωρία. Η φύση μου είναι να βρίσκω πρακτικές βελτιώσεις, να οργανώνω συστήματα που λειτουργούν και να κάνω τα πράγματα προσβάσιμα ακόμα και σε λιγότερο έμπειρους χρήστες. Στον επαγγελματικό χώρο, στοχεύω να δοκιμάσω πραγματικές δεξιότητες, να μάθω σε βάθος τη ροή εργασίας της ομάδας και να εξελιχθώ.',
@@ -2526,37 +2527,37 @@
         sec_projects: 'Έργα',
         ptype_thesis: 'ΈΡΕΥΝΑ, ΣΕ ΕΞΕΛΙΞΗ', ptitle_thesis: 'Διπλωματική ΠΜΣ - AI_Recovery', psub_thesis: 'Πρόβλεψη Συνδεσιμότητας και Ανάκτηση Διαδρομής σε Δίκτυα SD-UAV',
         pdesc_thesis: 'Αυτο-εποπτευόμενο LSTM (2 επίπεδα, 64 κρυφές μονάδες, 14 χαρακτηριστικά 9-αξόνων IMU) εκπαιδευμένο σε 544K ακολουθίες στα 240Hz, val loss 0.2264. PPO agent για ανάκτηση σμήνους σε προσομοίωση 3 drones (Godot 4) μέσω UDP bridge στα 10Hz. Πείραμα domain-shift 4 επαναλήψεων ποσοτικοποιεί 47% υποβάθμιση.',
-        ptype_atlas: 'ΥΛΙΚΟ - ΠΡΟΣΩΠΙΚΟ', ptitle_atlas: 'Project Atlas - Drone από Μηδέν', psub_atlas: 'Πλήρης κατασκευή υλικού, custom firmware C++, δοκιμές πτήσης',
+        ptype_atlas: 'ΥΛΙΚΟ - ΠΡΟΣΩΠΙΚΟ', ptitle_atlas: 'Project Atlas - Drone από το Μηδέν', psub_atlas: 'Πλήρης κατασκευή υλικού, custom firmware C++, δοκιμές πτήσης',
         pdesc_atlas: 'FlyfishRC Atlas 4 LR deadcat πλαίσιο (173mm), Teensy 4.1 (600MHz Cortex-M7), MPU6050, BMP280, QMC5883L, GM10 GPS, ESC GEPRC Taker E55, ELRS EP1 Dual @ 420kbaud. Custom firmware: Madgwick6DOF AHRS (&beta;=0.04), cascade PID (100Hz γωνία / 1kHz ρυθμός), DShot600 μέσω DMA.',
         ptype_telemetry: 'ΕΦΑΡΜΟΓΗ ANDROID', ptitle_telemetry: 'Atlas Τηλεμετρία', psub_telemetry: 'Companion app για το Project Atlas',
         pdesc_telemetry: 'Godot 4 APK (v1.1, 116 MB). MAVLink v2 FSM parser με CRC-16/MCRF4XX. Τρεις λειτουργίες: USB-C VCP, WiFi UDP 14550, Bluetooth SPP. Retro VFD αισθητική, διανυσματικός τεχνητός ορίζοντας, γράφημα τάσης 300 δειγμάτων (30s στα 10Hz), μπάρα ρεύματος 20 τμημάτων (0&ndash;40A).',
-        ptype_paperpilot: 'AI / RAG, ΜΑΘΗΜΑ ΠΜΣ', ptitle_paperpilot: 'PaperPilot', psub_paperpilot: 'Agentic RAG σύστημα για ερευνητικά άρθρα',
+        ptype_paperpilot: 'AI / RAG', ptitle_paperpilot: 'PaperPilot', psub_paperpilot: 'Agentic RAG σύστημα για ερευνητικά άρθρα',
         pdesc_paperpilot: 'LangGraph ReAct agent για 50 άρθρα ArXiv (360K tokens, Qdrant). Section-aware chunking, reranking BAAI/bge-reranker-base, fallback arxiv_search, MCP server bonus. v3 RAGAS: Context Precision 0.166 (+93% έναντι v1), Faithfulness 0.284 (+33%), Definitional CP 0.961. Τριπλή αξιολόγηση (RAGAS + Tool Call Accuracy + HAIC). Docker stack, Langfuse tracing, Chainlit UI.',
         ptype_sar: 'FULL-STACK ΠΡΟΣΟΜΟΙΩΣΗ', ptitle_sar: 'Πλατφόρμα SAR-UGV', psub_sar: 'Multi-agent SAR σε πραγματικούς χάρτες',
         pdesc_sar: 'FastAPI backend, δρομολόγηση osmnx, A* με βάρη κινδύνου και τιμωρίες εχθρικών ζωνών, cKDTree O(log n). Τέσσερις ταυτόχρονοι agents, 18 REST endpoints, αναπαραγωγή 0.25&times;&ndash;100&times;, προβολή WGS-84 σε UTM.',
-        ptype_devops: 'CLOUD / DEVOPS, ΜΑΘΗΜΑ ΠΜΣ', ptitle_devops: 'DevOps-Pets', psub_devops: 'K8s CI/CD με ανάπτυξη Azure',
+        ptype_devops: 'CLOUD / DEVOPS', ptitle_devops: 'DevOps-Pets', psub_devops: 'K8s CI/CD με ανάπτυξη Azure',
         pdesc_devops: 'Kubernetes (Kind) με Ansible playbooks, αυτόματο Jenkins CI/CD, PostgreSQL, MinIO, MailHog, HTTPS μέσω cert-manager + Let\'s Encrypt. Ανάπτυξη σε Azure VM και AKS. Ρύθμιση με μία εντολή για τοπικό, VM ή cloud περιβάλλον.',
         ptype_audioweb: 'FULL-STACK, ΑΥΤΟ-ΦΙΛΟΞΕΝΙΑ', ptitle_audioweb: 'AudioWeb', psub_audioweb: 'Πλατφόρμα streaming μουσικής',
         pdesc_audioweb: 'Flask 3.0, PostgreSQL, MinIO, Docker Compose. yt-dlp με bgutil headless Chromium για 320kbps MP3. Frontend React 18/Vite, 10-band EQ (&plusmn;12dB, Q=1.2 biquad), 10 λειτουργίες Canvas οπτικοποίησης, 2048-sample FFT.',
-        ptype_netflix: 'ML, ΜΑΘΗΜΑ ΠΜΣ', ptitle_netflix: 'Σύστημα Προτάσεων Netflix', psub_netflix: 'Content-based filtering με Explainable AI',
+        ptype_netflix: 'MACHINE LEARNING', ptitle_netflix: 'Σύστημα Προτάσεων Netflix', psub_netflix: 'Content-based filtering με Explainable AI',
         pdesc_netflix: 'TF-IDF πάνω σε σκηνοθέτη, cast, είδος και περιγραφή για 8000+ τίτλους Netflix. Cosine similarity με τριπλό βάρος στο είδος, εξυγίανση ονομάτων cast για αποφυγή overlap metadata. K-Means (15 clusters) + PCA 2D οπτικοποίηση ολόκληρου του καταλόγου. XAI επίπεδο που εξηγεί γιατί προτάθηκε κάθε τίτλος (κοινός σκηνοθέτης, cast ή είδος). Ταξινόμηση age-rating εξερευνήθηκε ως 61% οροφή, εξηγούμενη ως ποιοτικό πρόβλημα δεδομένων.',
         ptype_bigdata: 'ΑΝΑΛΥΣΗ ΔΕΔΟΜΕΝΩΝ, GITHUB', ptitle_bigdata: 'Big Data Analysis', psub_bigdata: 'Apache Spark text indexing και entity resolution',
         pdesc_bigdata: 'Apache Spark pipeline σε Scala και PySpark. Φάση 1: inverted index και ανάλυση συχνότητας λέξεων σε μεγάλα κείμενα (RDD-based). Φάση 2: entity resolution σε ετερογενή datasets (εστιατόρια FODORS&ndash;ZAGAT, βιβλιογραφίες DBLP&ndash;ACM) &ndash; token blocking, Jaccard similarity, αξιολόγηση Precision/Recall/F1.',
-        ptype_datamine: 'ΕΞΟΡΥΞΗ ΔΕΔΟΜΕΝΩΝ, ΜΑΘΗΜΑ ΠΜΣ', ptitle_datamine: 'Πρόβλεψη Κυκλοφορίας Επιβατών', psub_datamine: 'Αεροδρόμιο SF, 38 893 εγγραφές, 2000-2022',
+        ptype_datamine: 'ΕΞΟΡΥΞΗ ΔΕΔΟΜΕΝΩΝ', ptitle_datamine: 'Πρόβλεψη Κυκλοφορίας Επιβατών', psub_datamine: 'Αεροδρόμιο SF, 38 893 εγγραφές, 2000-2022',
         pdesc_datamine: 'Ταξινόμηση σε 5 κλάσεις σε ιστορικά δεδομένα αεροδρομίου. Pipeline KNIME: αφαίρεση outliers με IQR, στρωματοποιημένη κατανομή 70/30, επτά αλγόριθμοι. Καλύτερο ensemble (Random Forest + GBT voting): <strong>78,9% ακρίβεια</strong>.',
-        ptype_attica: 'ΣΤΑΤΙΣΤΙΚΗ, ΜΑΘΗΜΑ ΠΜΣ', ptitle_attica: 'Ανάλυση Μελέτης Υγείας Αττικής', psub_attica: '20-ετής επιδημιολογική κοόρτη, μοντελοποίηση κινδύνου ΚΑΝ',
+        ptype_attica: 'ΣΤΑΤΙΣΤΙΚΗ', ptitle_attica: 'Ανάλυση Μελέτης Υγείας Αττικής', psub_attica: '20-ετής επιδημιολογική κοόρτη, μοντελοποίηση κινδύνου ΚΑΝ',
         pdesc_attica: 'Στατιστική ανάλυση σε R της κοόρτης ATTICA Study. Λογιστική παλινδρόμηση για 10-ετή και 20-ετή καρδιαγγειακά αποτελέσματα, χάρτης θερμότητας συσχετίσεων Pearson, boxplots ανά αποτέλεσμα, ασυμμετρία και VIF διαγνωστικά πολυσυγγραμμικότητας, pROC για καμπύλες ROC/AUC. Αυτόματη πολυσέλιδη αναφορά PDF μέσω ggplot2.',
         ptype_bscthesis: 'ΑΚΑΔΗΜΑΪΚΟ, ΠΤΥΧΙΑΚΗ', ptitle_bscthesis: 'Πτυχιακή - Προσομοίωση SAR', psub_bscthesis: 'Βαθμός 10/10, συνεργατικά πολυ-οχηματικά SAR',
         pdesc_bscthesis: 'Συνεργατική προσομοίωση Python/Pygame (~1 763 γραμμές). Πλέγμα 25&times;20, τρία είδη οχημάτων, έξι συνεργατικά σενάρια, A* με κόστη εδάφους, τρία μοτίβα αναζήτησης (Expanding Square, Sector, Parallel Track), ομίχλη πολέμου, εξαγωγή στατιστικών JSON.',
-        ptype_graphdb: 'ΒΑΣΗ ΓΡΑΦΩΝ, ΜΑΘΗΜΑ ΠΜΣ', ptitle_graphdb: 'Graph DB &amp; ETL - Shakespeare', psub_graphdb: 'Μοντελοποίηση γράφου Neo4j και ETL με Spark σε δεδομένα Shakespeare, Βαθμός 9',
-        ptype_crowdfund: 'ΚΑΤΑΝΕΜΗΜΕΝΑ ΣΥΣΤΗΜΑΤΑ, ΜΑΘΗΜΑ ΠΜΣ', ptitle_crowdfund: 'Κατανεμημένα Συστήματα - Crowdfunding', psub_crowdfund: 'Πλατφόρμα crowdfunding Vue.js + REST API, 46.5/50',
-        ptype_pacman: 'ΤΝ / ΑΛΓΟΡΙΘΜΟΙ, ΜΑΘΗΜΑ ΠΤΧ', ptitle_pacman: 'ΤΝ - Pacman Agents', psub_pacman: 'Agents με αλγόριθμους αναζήτησης για Pac-Man',
-        ptype_compvision: 'ΥΠΟΛΟΓΙΣΤΙΚΗ ΟΡΑΣΗ, ΜΑΘΗΜΑ ΠΜΣ', ptitle_compvision: 'CV - Computer Vision', psub_compvision: 'Κατάτμηση, ταξινόμηση και ανακατασκευή με νευρωνικά δίκτυα',
-        ptype_graphclass: 'ΝΕΥΡΩΝΙΚΑ ΓΡΑΦΟΥ, ΜΑΘΗΜΑ ΠΜΣ', ptitle_graphclass: 'Graph Classification - ENZYMES', psub_graphclass: 'Ταξινόμηση γράφων πρωτεϊνών με GNN στο dataset ENZYMES',
-        ptype_nlpcluster: 'ΕΠΛ / ΑΠΛ, ΜΑΘΗΜΑ ΠΜΣ', ptitle_nlpcluster: 'NLP &amp; IR - Reddit Clustering', psub_nlpcluster: 'Ομαδοποίηση κειμένου με πολλαπλά μοντέλα σε δεδομένα Reddit',
-        ptype_mlpscr: 'ΒΑΘΙΑ ΜΑΘΗΣΗ, ΜΑΘΗΜΑ ΠΜΣ', ptitle_mlpscr: 'MLP from Scratch', psub_mlpscr: 'Πολυεπίπεδο perceptron από μηδέν με backpropagation NumPy',
-        ptype_food11: 'ΤΑΞΙΝΟΜΗΣΗ ΕΙΚΟΝΩΝ, ΜΑΘΗΜΑ ΠΜΣ', ptitle_food11: 'Food-11 - Αναγνώριση Τροφίμων', psub_food11: 'Σύγκριση transfer learning σε dataset 11 κατηγοριών τροφίμων',
-        ptype_transformer: 'ATTENTION / ΕΠΛ, ΜΑΘΗΜΑ ΠΜΣ', ptitle_transformer: 'Ανάλυση Attention &amp; Transformer', psub_transformer: 'Υλοποίηση και ανάλυση self-attention και BERT attention mechanisms',
+        ptype_graphdb: 'ΒΑΣΗ ΓΡΑΦΩΝ', ptitle_graphdb: 'Graph DB &amp; ETL - Shakespeare', psub_graphdb: 'Μοντελοποίηση γράφου Neo4j και ETL με Spark σε δεδομένα Shakespeare, Βαθμός 9',
+        ptype_crowdfund: 'ΚΑΤΑΝΕΜΗΜΕΝΑ ΣΥΣΤΗΜΑΤΑ', ptitle_crowdfund: 'Κατανεμημένα Συστήματα - Crowdfunding', psub_crowdfund: 'Πλατφόρμα crowdfunding Vue.js + REST API, 46.5/50',
+        ptype_pacman: 'Τεχνιτή Νοημοσύνη / ΑΛΓΟΡΙΘΜΟΙ', ptitle_pacman: 'ΤΝ - Pacman Agents', psub_pacman: 'Agents με αλγόριθμους αναζήτησης για Pac-Man',
+        ptype_compvision: 'ΥΠΟΛΟΓΙΣΤΙΚΗ ΟΡΑΣΗ', ptitle_compvision: 'CV - Computer Vision', psub_compvision: 'Κατάτμηση, ταξινόμηση και ανακατασκευή με νευρωνικά δίκτυα',
+        ptype_graphclass: 'ΝΕΥΡΩΝΙΚΑ ΓΡΑΦΟΥ', ptitle_graphclass: 'Graph Classification - ENZYMES', psub_graphclass: 'Ταξινόμηση γράφων πρωτεϊνών με GNN στο dataset ENZYMES',
+        ptype_nlpcluster: 'ΕΞΟΡΥΞΗ ΚΕΙΜΕΝΟΥ', ptitle_nlpcluster: 'NLP &amp; IR - Reddit Clustering', psub_nlpcluster: 'Ομαδοποίηση κειμένου με πολλαπλά μοντέλα σε δεδομένα Reddit',
+        ptype_mlpscr: 'ΒΑΘΙΑ ΜΑΘΗΣΗ', ptitle_mlpscr: 'MLP from Scratch', psub_mlpscr: 'Πολυεπίπεδο perceptron από μηδέν με backpropagation NumPy',
+        ptype_food11: 'ΤΑΞΙΝΟΜΗΣΗ ΕΙΚΟΝΩΝ', ptitle_food11: 'Food-11 - Αναγνώριση Τροφίμων', psub_food11: 'Σύγκριση transfer learning σε dataset 11 κατηγοριών τροφίμων',
+        ptype_transformer: 'TRANSFORMERS / ATTENTION', ptitle_transformer: 'Ανάλυση Attention &amp; Transformer', psub_transformer: 'Υλοποίηση και ανάλυση self-attention και BERT attention mechanisms',
         mini_vis_title: 'Python Οπτικοποιητής Ήχου', mini_vis_desc: 'WASAPI loopback, NumPy rfft 2048 δείγματα, 200 μπάρες 20Hz-22kHz, 60FPS Pygame.',
         mini_yolo_title: 'YOLOv8 Live Ανίχνευση', mini_yolo_desc: 'YOLOv8l, OpenCV 1280&times;720, agnostic NMS, παρακολούθηση πολυγωνικής ζώνης.',
         mini_yt_title: 'YouTube Downloader', mini_yt_desc: 'HTML/Flask front-end για yt-dlp, YouTube &amp; YouTube Music, playlist, 320kbps MP3.',
@@ -2569,7 +2570,8 @@
         edu_bsc_detail: 'Σεπ 2021 - Σεπ 2025 &nbsp;&middot;&nbsp; <br><br>Πτυχιακή: <strong>Σχεδιασμός αλγορίθμων διαχείρισης για μη επανδρωμένα οχήματα για επιχειρήσεις έρευνας και διάσωσης</strong><br><em>Design of Management Algorithms for Unmanned Vehicles for Search and Rescue Operations</em><br><br>Βαθμός πτυχιακής: <strong>10/10</strong>',
         sec_achieve: 'ΕΠΙΤΕΥΓΜΑΤΑ',
         ach1_title: 'Υποτροφία Γ. Καραμπατζός', ach1_sub: 'Χαροκόπειο Πανεπιστήμιο, βραβεύτηκε για σπουδές ΠΜΣ',
-        ach2_title: 'Πιστοποιητικό Διδακτικής Επάρκειας', ach2_sub: 'ΑΣΕΠ (Ανώτατο Συμβούλιο Επιλογής Προσωπικού)',
+        ach2_title: 'Πιστοποιητικό Διδακτικής Επάρκειας',
+        // ach2_sub: 'ΑΣΕΠ (Ανώτατο Συμβούλιο Επιλογής Προσωπικού)',
         ach3_title: 'Πτυχιακή 10/10', ach3_sub: 'Σχεδιασμός αλγορίθμων για συνεργατικά UAV σε SAR επιχειρήσεις',
         ach4_title: '', ach4_sub: 'Χαροκόπειο Πανεπιστήμιο Αθηνών, τάξη 2025',
         sec_contact: 'Επικοινωνία', contact_heading: 'Ας χτίσουμε κάτι μαζί.',
