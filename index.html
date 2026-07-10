@@ -1309,6 +1309,12 @@
       white-space: nowrap;
     }
 
+    .cv-muted {
+      font-size: .8rem;
+      color: #60728a;
+      font-style: italic;
+    }
+
     .cv-proj-full {
       margin-bottom: .45rem;
       font-size: .87rem;
@@ -1468,7 +1474,7 @@
     @media print {
       @page {
         size: A4 portrait;
-        margin: 1cm 1.2cm;
+        margin: 0.55cm 0.9cm;
       }
 
       nav,
@@ -1510,20 +1516,20 @@
         padding: 0 !important;
         max-width: 100% !important;
         margin: 0 !important;
-        font-size: 7.8pt !important;
-        line-height: 1.28 !important;
+        font-size: 7pt !important;
+        line-height: 1.22 !important;
         color: #222 !important;
       }
 
       .cv-doc-header {
         border: none !important;
-        margin-bottom: .4rem !important;
+        margin-bottom: .25rem !important;
       }
 
       .cv-doc-name {
         color: #385522 !important;
-        font-size: 16pt !important;
-        margin-bottom: .1rem !important;
+        font-size: 13pt !important;
+        margin-bottom: .08rem !important;
         letter-spacing: .02em !important;
       }
 
@@ -1534,23 +1540,22 @@
       }
 
       .cv-summary {
-        font-size: 7.5pt !important;
-        line-height: 1.25 !important;
-        margin-bottom: .4rem !important;
+        font-size: 6.8pt !important;
+        line-height: 1.2 !important;
+        margin-bottom: .25rem !important;
         color: #555555 !important;
       }
 
       .cv-block {
-        margin-bottom: .32rem !important;
-        break-inside: avoid !important;
+        margin-bottom: .18rem !important;
       }
 
       .cv-block-title {
         color: #385522 !important;
         border-bottom: 1px solid #385522 !important;
-        font-size: 7.8pt !important;
+        font-size: 7pt !important;
         padding-bottom: 1px !important;
-        margin-bottom: .16rem !important;
+        margin-bottom: .1rem !important;
       }
 
       .cv-row {
@@ -1565,40 +1570,40 @@
       }
 
       .cv-proj-full {
-        font-size: 7.5pt !important;
-        line-height: 1.25 !important;
-        margin-bottom: .15rem !important;
+        font-size: 6.8pt !important;
+        line-height: 1.2 !important;
+        margin-bottom: .08rem !important;
       }
 
       .cv-proj-stack-italic {
-        font-size: 7pt !important;
+        font-size: 6.5pt !important;
         color: #525252 !important;
       }
 
       .cv-proj-table {
-        grid-template-columns: 40% 60% !important;
-        gap: .02rem .18rem !important;
+        grid-template-columns: 38% 62% !important;
+        gap: .005rem .12rem !important;
       }
 
       .cv-proj-name {
-        font-size: 7.5pt !important;
-        color: #555555 !important;
-        line-height: 1.25 !important;
+        font-size: 6.6pt !important;
+        color: #333 !important;
+        line-height: 1.18 !important;
       }
 
       .cv-proj-stack-cell {
-        font-size: 7pt !important;
+        font-size: 6.3pt !important;
         color: #525252 !important;
-        line-height: 1.25 !important;
+        line-height: 1.18 !important;
       }
 
       .cv-skills-grid {
         grid-template-columns: 1fr 1fr !important;
-        gap: .06rem .5rem !important;
+        gap: .04rem .4rem !important;
       }
 
       .cv-skill-cell {
-        font-size: 7.5pt !important;
+        font-size: 6.8pt !important;
         color: #555555 !important;
       }
 
@@ -1607,12 +1612,12 @@
       }
 
       .cv-exp-row {
-        margin-bottom: .03rem !important;
-        gap: .04rem .5rem !important;
+        margin-bottom: .02rem !important;
+        gap: .02rem .4rem !important;
       }
 
       .cv-exp-line {
-        font-size: 7.5pt !important;
+        font-size: 7pt !important;
         color: #555555 !important;
       }
 
@@ -1621,37 +1626,45 @@
       }
 
       .cv-exp-date {
-        font-size: 7pt !important;
+        font-size: 6.5pt !important;
         color: #525252 !important;
       }
 
       .cv-exp-desc {
-        font-size: 7pt !important;
+        font-size: 6.5pt !important;
         color: #525252 !important;
-        margin-bottom: .12rem !important;
+        margin-bottom: .06rem !important;
         font-style: italic !important;
+        line-height: 1.2 !important;
+      }
+
+      .cv-muted {
+        font-size: 6.2pt !important;
+        color: #60728a !important;
+        font-style: italic !important;
+        margin-bottom: 0 !important;
       }
 
       .cv-lang-table {
-        gap: .08rem .5rem !important;
-        margin-bottom: .2rem !important;
+        gap: .04rem .4rem !important;
+        margin-bottom: .1rem !important;
       }
 
       .cv-lang-name {
-        font-size: 7.5pt !important;
+        font-size: 6.8pt !important;
         color: #555555 !important;
       }
 
       .cv-lang-lvl {
-        font-size: 7.5pt !important;
+        font-size: 6.8pt !important;
         color: #525252 !important;
       }
 
       .cv-cert-flat li {
-        font-size: 7.5pt !important;
+        font-size: 6.8pt !important;
         color: #555555 !important;
-        gap: .12rem !important;
-        grid-template-columns: 110px 1fr !important;
+        gap: .08rem !important;
+        grid-template-columns: 100px 1fr !important;
       }
 
       .cv-cert-yr {
@@ -1720,13 +1733,13 @@
       <h1 class="hero-name reveal">Spyridon<br>Tsilimpokos</h1>
       <p class="hero-role reveal"><span class="typed" id="typed"></span><span class="cursor"></span></p>
       <div class="hero-body reveal">
-        <p class="hero-desc" data-i18n="hero_desc">I build autonomous systems end-to-end, from <strong>bare-metal drone
-            firmware in C++</strong> to <strong>self-supervised LSTM models for GPS-denied UAV swarm recovery</strong>.
-          Fresh out of university, looking for the right team to build something meaningful.</p>
+        <p class="hero-desc" data-i18n="hero_desc">I build systems from scratch: from <strong>bare-metal drone firmware
+            in C++</strong> to <strong>self-supervised LSTM models, ML pipelines, AI agents and full-stack
+            platforms</strong>. Fresh out of university, looking for the right team to build something meaningful.</p>
         <div class="hero-right">
           <div class="hero-pills">
             <span class="pill" data-i18n="pill_msc">MSC CANDIDATE</span>
-            <span class="pill" data-i18n="pill_drone">DRONE BUILDER</span>
+            <span class="pill" data-i18n="pill_drone">HARDWARE + AI</span>
             <span class="pill" data-i18n="pill_ml">ML RESEARCH</span>
           </div>
           <div class="hero-cta">
@@ -2279,99 +2292,91 @@
           <div class="cv-doc-name" data-i18n="cv_fullname">SPYRIDON TSILIMPOKOS</div>
           <div class="cv-doc-meta">
             <a href="mailto:s.e.tsilimpokos@gmail.com">s.e.tsilimpokos@gmail.com</a>
-            &nbsp;|&nbsp;<span>6946914831</span>
+            &nbsp;|&nbsp;<span>+30 6946914831</span>
             &nbsp;|&nbsp;<span data-i18n="footer_loc">Athens</span>
+            &nbsp;|&nbsp;<a href="https://www.linkedin.com/in/spyridon-tsilimpokos" target="_blank" rel="noopener">linkedin.com/in/spyridon-tsilimpokos</a>
             &nbsp;|&nbsp;<a href="https://github.com/Tsilispyr" target="_blank" rel="noopener">github.com/Tsilispyr</a>
             &nbsp;|&nbsp;<a href="https://tsilispyr.github.io/" target="_blank" rel="noopener">tsilispyr.github.io</a>
           </div>
         </header>
 
-        <p class="cv-summary" data-i18n="cv_summary">Graduate in Informatics &amp; Telematics (BSc)
-          and postgraduate student in Data Science &amp; AI (MSc) - Harokopio University. I focus on designing
-          algorithms for autonomous systems, big data pipelines, ML and full-stack development. I adapt quickly to new
-          technologies and work effectively both independently and as part of a team.</p>
-
-        <div class="cv-block">
-          <h3 class="cv-block-title" data-i18n="cv_edu_h">EDUCATION</h3>
-          <div class="cv-row">
-            <div data-i18n="cv_edu_bsc"><strong>BSc Informatics &amp; Telematics</strong> - Harokopio University</div>
-            <div class="cv-row-date">Sep 2021 - Sep 2025</div>
-          </div>
-          <div class="cv-row">
-            <div data-i18n="cv_edu_msc"><strong>MSc Data Science &amp; AI</strong> - Harokopio University</div>
-            <div class="cv-row-date">Oct 2025 - Sep 2026</div>
-          </div>
-          <div class="cv-row">
-            <div data-i18n="cv_edu_uas"><em>Design and Development of Unmanned Aerial Systems (UAS)</em> - NKUA</div>
-            <div class="cv-row-date">Oct 2025 - Jun 2026</div>
-          </div>
-          <div class="cv-row">
-            <div data-i18n="cv_edu_ent"><em>Entrepreneurship and Strategic Planning for the Future in an Environment of
-                Uncertainty</em> - NKUA</div>
-            <div class="cv-row-date">Dec 2025 - Feb 2026</div>
-          </div>
-        </div>
-
-        <div class="cv-block">
-          <h3 class="cv-block-title" data-i18n="cv_proj_h">KEY PROJECTS (Complete &amp;/or Ongoing)</h3>
-          <div id="cv-projects-list"></div>
-        </div>
+        <p class="cv-summary" data-i18n="cv_summary">I build systems from scratch: from C++ flight controller firmware and self-supervised LSTM models to ML pipelines, AI agent architectures and production full-stack applications. Recently graduated MSc in Data Science &amp; AI - Harokopio University. Looking for the right team to build something meaningful.</p>
 
         <div class="cv-block">
           <h3 class="cv-block-title" data-i18n="cv_skills_h">TECHNICAL SKILLS</h3>
           <div class="cv-skills-grid">
-            <div class="cv-skill-cell"><strong data-i18n="cv_sk_lang">Languages:</strong> Python, Java, R, SQL,
-              JavaScript, C, Shell</div>
+            <div class="cv-skill-cell"><strong data-i18n="cv_sk_lang">Languages:</strong> Python, Java, R, SQL, JavaScript, C, Shell</div>
+            <div class="cv-skill-cell"><strong>AI / ML:</strong> PyTorch, Scikit-learn, LangGraph, HuggingFace, Qdrant, Spark, KNIME, Neo4j</div>
             <div class="cv-skill-cell"><strong>Frameworks:</strong> FastAPI, Flask, Vue.js, Spring REST</div>
-            <div class="cv-skill-cell"><strong>Data/ML:</strong> Spark, Hadoop, KNIME, Scikit-learn, Neo4j</div>
-            <div class="cv-skill-cell"><strong>Infra:</strong> Docker, MinIO, RabbitMQ, PostgreSQL, nginx, Git</div>
+            <div class="cv-skill-cell"><strong>Infra / Dev:</strong> Docker, MinIO, RabbitMQ, PostgreSQL, nginx, Git</div>
           </div>
         </div>
 
         <div class="cv-block">
           <h3 class="cv-block-title" data-i18n="cv_exp_h">PROFESSIONAL EXPERIENCE</h3>
           <div class="cv-exp-row">
-            <div class="cv-exp-line" data-i18n="cv_job1_line"><strong>Accounting Office Assistant</strong> - Psimadas
-              Marinos Nikolaos, Agrinio</div>
-            <div class="cv-exp-date" data-i18n="cv_job1_d">Jan 2019 - Dec 2021</div>
+            <div class="cv-exp-line" data-i18n="cv_job_ra_line"><strong>Graduate Research Associate</strong> - Harokopio University</div>
+            <div class="cv-exp-date" data-i18n="cv_job_ra_d">Sept 2025 - Present</div>
           </div>
-          <div class="cv-exp-desc" data-i18n="cv_job1_p">Sorting, filing, accounting transactions, secretarial support.
-          </div>
+          <div class="cv-exp-desc" data-i18n="cv_job_ra_sub">in collaboration with Hellenic Military Academy (SSE)</div>
+          <div class="cv-exp-desc" data-i18n="cv_job_ra_desc">· Developing AI_Recovery: connectivity prediction &amp; path recovery for SD-UAV networks (MSc thesis)<br>· Poster accepted &amp; presented - Hellenic Robotics Forum 2026 (HRF 2026)<br>· Paper submitted to IEEE Vehicular Technology Conference (IEEE VTC) - under review<br>· Preparing submission - IARIA: 2nd Int. Conf. on AI-enabled UAVs &amp; IoT for Critical Services</div>
           <div class="cv-exp-row">
-            <div class="cv-exp-line" data-i18n="cv_job2_line"><strong>Office Employee</strong> - Gameathlon</div>
-            <div class="cv-exp-date" data-i18n="cv_job2_d">Nov 2024</div>
+            <div class="cv-exp-line" data-i18n="cv_job_dev_line"><strong>Independent Software Developer</strong> - Personal Projects</div>
+            <div class="cv-exp-date" data-i18n="cv_job_dev_d">2022 - Present</div>
           </div>
+          <div class="cv-exp-desc" data-i18n="cv_job_dev_desc">· Project Atlas: full hardware drone build with custom C++ firmware (Madgwick AHRS, cascade PID, DShot600 via DMA) and Android telemetry app (Godot 4, MAVLink v2)<br>· SAR-UGV: multi-agent search &amp; rescue on live OSM graphs, risk-weighted A*, 4 agents, 92% mission success<br>· AudioWeb: self-hosted YouTube to MP3 platform, WebGL visualizer, 10-band EQ, Docker stack</div>
           <div class="cv-exp-row">
-            <div class="cv-exp-line" data-i18n="cv_job3_line"><strong>Salesperson</strong> - Retail</div>
-            <div class="cv-exp-date" data-i18n="cv_job3_d">Feb 2025</div>
+            <div class="cv-exp-line" data-i18n="cv_job_acc_line"><strong>Accounting &amp; Administrative Support</strong> - Psimadas Marinos Nikolaos, Agrinio</div>
+            <div class="cv-exp-date" data-i18n="cv_job_acc_d">Jan 2019 - Dec 2021</div>
+          </div>
+          <div class="cv-exp-desc" data-i18n="cv_job_acc_desc">· Handled daily accounting transactions, document filing and financial records management<br>· Administrative and secretarial support in a professional office environment<br>· Developed organisational skills and experience with client-facing financial communication</div>
+        </div>
+
+        <div class="cv-block">
+          <h3 class="cv-block-title" data-i18n="cv_edu_h">EDUCATION</h3>
+          <div class="cv-row">
+            <div data-i18n="cv_edu_msc"><strong>MSc Data Science &amp; AI</strong> - Harokopio University</div>
+            <div class="cv-row-date">Oct 2025 - Sep 2026</div>
+          </div>
+          <div class="cv-row" style="margin-top:-2px">
+            <div class="cv-muted" data-i18n="cv_edu_scholarship">G. Karampatzos Scholarship - awarded for MSc studies</div>
+          </div>
+          <div class="cv-row">
+            <div data-i18n="cv_edu_bsc"><strong>BSc Informatics &amp; Telematics</strong> - Harokopio University</div>
+            <div class="cv-row-date">Sep 2021 - Sep 2025</div>
           </div>
         </div>
 
         <div class="cv-block">
-          <h3 class="cv-block-title" data-i18n="cv_langcert_h">LANGUAGES &amp; CERTIFICATES</h3>
-          <div class="cv-lang-table">
-            <span class="cv-lang-name" data-i18n="cv_lang_en_f">ENGLISH (Michigan Proficiency)</span><span
-              class="cv-lang-lvl" data-i18n="cv_lang_en_lvl">Fluent</span>
-            <span class="cv-lang-name" data-i18n="cv_lang_de_f">GERMAN (Zertifikat B1)</span><span class="cv-lang-lvl"
-              data-i18n="cv_lang_de_lvl">Intermediate</span>
+          <h3 class="cv-block-title" data-i18n="cv_research_h">RESEARCH &amp; PUBLICATIONS</h3>
+          <div class="cv-exp-row">
+            <div class="cv-exp-line" data-i18n="cv_res1_line"><strong>Poster - Hellenic Robotics Forum 2026 (#0083)</strong></div>
+            <div class="cv-exp-date" data-i18n="cv_res1_d">2026</div>
           </div>
-          <ul class="cv-cert-flat">
-            <li><span class="cv-cert-yr">2017</span><span data-i18n="cv_cert1">CERTIFICATION ECDL ADVANCED/EXPERT</span>
-            </li>
-            <li><span class="cv-cert-yr">2022</span><span data-i18n="cv_cert2">CERTIFICATION Specialist in the use of
-                techniques and tools for Social Media &amp; Marketing</span></li>
-            <li><span class="cv-cert-yr">2025</span><span data-i18n="cv_cert3">Customer First - Hatzi Skevofylaka</span>
-            </li>
-            <li><span class="cv-cert-yr">2025</span><span data-i18n="cv_cert4">TIME MANAGEMENT - HATZI FILAX
-                GROUP</span></li>
-            <li><span class="cv-cert-yr">2024 - 2025</span><span data-i18n="cv_cert5">Professional Skills CERTIFICATION,
-                Info Days of the Studies and Career Liaison Office of Harokopio University.</span></li>
-            <li><span class="cv-cert-yr">Dec 2025 - Feb 2026</span><span data-i18n="cv_cert6">Training Program
-                &laquo;Entrepreneurship and Strategic Planning for the Future in an Environment of Uncertainty&raquo;
-                NKUA</span></li>
-            <li><span class="cv-cert-yr">Oct 2025 - Jun 2026</span><span data-i18n="cv_cert7">Training Program
-                &laquo;Design and Development of Unmanned Aerial Systems (UAS)&raquo; NKUA</span></li>
-          </ul>
+          <div class="cv-exp-desc" data-i18n="cv_res1_desc">SAR-UGV: Web-Based Multi-Agent Search &amp; Rescue on Real Street Networks. Risk-weighted A* on live OSM graphs, 4 simultaneous agents, 92% mission success across 50 scenarios.</div>
+          <div class="cv-exp-row">
+            <div class="cv-exp-line" data-i18n="cv_res2_line"><strong>MSc Thesis (in progress)</strong> - Harokopio University</div>
+            <div class="cv-exp-date" data-i18n="cv_res2_d">2025 - 2026</div>
+          </div>
+          <div class="cv-exp-desc" data-i18n="cv_res2_desc">AI_Recovery: Connectivity prediction &amp; path recovery in SD-UAV networks.</div>
+          <div class="cv-exp-row">
+            <div class="cv-exp-line" data-i18n="cv_res3_line"><strong>BSc Thesis</strong> - Harokopio University</div>
+            <div class="cv-exp-date" data-i18n="cv_res3_d">2021 - 2025</div>
+          </div>
+          <div class="cv-exp-desc" data-i18n="cv_res3_desc">Cooperative multi-vehicle SAR simulation. Python/Pygame, 3 vehicle types, 6 cooperative scenarios, A* with terrain costs.</div>
+        </div>
+
+        <div class="cv-block">
+          <h3 class="cv-block-title" data-i18n="cv_proj_h">SELECTED PROJECTS</h3>
+          <div id="cv-projects-list"></div>
+        </div>
+
+        <div class="cv-block">
+          <h3 class="cv-block-title" data-i18n="cv_lang_h">LANGUAGES</h3>
+          <div class="cv-lang-table">
+            <span class="cv-lang-name" data-i18n="cv_lang_en_f">ENGLISH (Michigan Proficiency)</span><span class="cv-lang-lvl" data-i18n="cv_lang_en_lvl">Fluent</span>
+            <span class="cv-lang-name" data-i18n="cv_lang_de_f">GERMAN (Zertifikat B1)</span><span class="cv-lang-lvl" data-i18n="cv_lang_de_lvl">Intermediate</span>
+          </div>
         </div>
 
         <div class="cv-print-bridge">Interactive version: tsilispyr.github.io/#cv</div>
@@ -2427,8 +2432,8 @@
       en: {
         nav_about: 'About', nav_projects: 'Projects', nav_skills: 'Skills', nav_education: 'Education', nav_contact: 'Contact',
         hero_eyebrow: 'Athens, Greece &nbsp;&middot;&nbsp; MSc Candidate &nbsp;&middot;&nbsp; Open to opportunities',
-        hero_desc: 'I build autonomous systems end-to-end, from <strong>bare-metal drone firmware in C++</strong> to <strong>self-supervised LSTM models for GPS-denied UAV swarm recovery</strong>. Fresh out of university, looking for the right team to build something meaningful.',
-        pill_msc: 'MSC CANDIDATE', pill_drone: 'DRONE BUILDER', pill_ml: 'ML RESEARCH', btn_projects: 'View Projects',
+        hero_desc: 'I build systems from scratch: from <strong>bare-metal drone firmware in C++</strong> to <strong>self-supervised LSTM models, ML pipelines, AI agents and full-stack platforms</strong>. Fresh out of university, looking for the right team to build something meaningful.',
+        pill_msc: 'MSC CANDIDATE', pill_drone: 'HARDWARE + AI', pill_ml: 'ML RESEARCH', btn_projects: 'View Projects',
         sec_about: 'About',
         about_p1: 'I\'m a Computer Science graduate from HUA, currently finishing my MSc at Harokopio University. My thesis tackles connectivity prediction and path recovery in GPS-denied UAV swarms, combining self-supervised LSTM dead reckoning with PPO reinforcement learning. Submission is roughly 2 months out.',
         about_p2: 'The drone work goes all the way down: I assembled a quadcopter from bare components, wrote its flight controller firmware in C++ from scratch (Madgwick AHRS, cascade PID, DShot600 via DMA), then built the Android telemetry app for it in Godot 4 with a full MAVLink v2 FSM parser.',
@@ -2485,17 +2490,34 @@
         ach3_title: 'BSc Thesis 10/10', ach3_sub: 'Multi-vehicle cooperative SAR algorithm design',
         ach4_title: '', ach4_sub: 'Harokopio University of Athens, Class of 2025',
         sec_contact: 'Contact', contact_heading: 'Let\'s build something.',
-        contact_desc: 'Finishing my MSc and actively looking for <strong>engineering roles</strong> in autonomous systems, ML infrastructure, or embedded software. Happy to talk research, drones, or backends, reach out through any of these channels.',
+        contact_desc: 'Finishing my MSc and actively looking for <strong>engineering roles</strong> in autonomous systems, ML infrastructure, or embedded software. Happy to talk research, UVs, or backends, reach out through any of these channels.',
         footer_loc: 'Athens, Greece',
         nav_cv: 'CV', sec_cv: 'Curriculum Vitae',
         cv_dl: '&#8659; Download CV', cv_view_online: 'View Online &#8599;', cv_to_projects: '&#8593; Projects', cv_print: '&#9113; Print',
         cv_fullname: 'SPYRIDON TSILIMPOKOS',
-        cv_summary: 'Graduate in Informatics &amp; Telematics (BSc) and postgraduate student in Data Science &amp; AI (MSc) - Harokopio University. I focus on designing algorithms for autonomous systems, big data pipelines, ML and full-stack development. I adapt quickly to new technologies and work effectively both independently and as part of a team.',
+        cv_summary: 'I build systems from scratch: from C++ flight controller firmware and self-supervised LSTM models to ML pipelines, AI agent architectures and production full-stack applications. Recently graduated MSc in Data Science &amp; AI - Harokopio University. Looking for the right team to build something meaningful.',
         cv_edu_h: 'EDUCATION', cv_edu_bsc: '<strong>BSc Informatics &amp; Telematics</strong> - Harokopio University',
         cv_edu_msc: '<strong>MSc Data Science &amp; AI</strong> - Harokopio University',
+        cv_edu_scholarship: 'G. Karampatzos Scholarship - awarded for MSc studies',
         cv_edu_uas: '<em>Design and Development of Unmanned Aerial Systems (UAS)</em> - NKUA',
         cv_edu_ent: '<em>Entrepreneurship and Strategic Planning for the Future in an Environment of Uncertainty</em> - NKUA',
-        cv_proj_h: 'KEY PROJECTS (Complete &amp;/or Ongoing)', cv_skills_h: 'TECHNICAL SKILLS', cv_sk_lang: 'Languages:',
+        cv_research_h: 'RESEARCH &amp; PUBLICATIONS',
+        cv_res1_line: '<strong>Poster - Hellenic Robotics Forum 2026 (#0083)</strong>', cv_res1_d: '2026',
+        cv_res1_desc: 'SAR-UGV: Web-Based Multi-Agent Search &amp; Rescue on Real Street Networks. Risk-weighted A* on live OSM graphs, 4 simultaneous agents, 92% mission success across 50 scenarios.',
+        cv_res2_line: '<strong>MSc Thesis</strong> - Harokopio University', cv_res2_d: '2025 - 2026',
+        cv_res2_desc: 'AI_Recovery: Connectivity prediction &amp; path recovery in SD-UAV networks. In progress.',
+        cv_res3_line: '<strong>BSc Thesis</strong> - Harokopio University', cv_res3_d: '2021 - 2025',
+        cv_res3_desc: 'Cooperative multi-vehicle SAR simulation. Python/Pygame, 3 vehicle types, 6 cooperative scenarios.',
+        cv_proj_h: 'SELECTED PROJECTS (Complete &amp;/or Ongoing)', cv_skills_h: 'TECHNICAL SKILLS', cv_sk_lang: 'Languages:',
+        cv_job_ra_line: '<strong>Graduate Research Associate</strong> - Harokopio University', cv_job_ra_d: 'Sept 2025 - Present',
+        cv_job_ra_sub: 'in collaboration with Hellenic Military Academy (SSE)',
+        cv_job_ra_desc: '· Developing AI_Recovery: connectivity prediction &amp; path recovery for SD-UAV networks (MSc thesis)<br>· Accepted &amp; presented poster - Hellenic Robotics Forum 2026 (HRF 2026)<br>· Paper submitted to IEEE Vehicular Technology Conference (IEEE VTC) - under review<br>· Preparing submission - IARIA: 2nd Int. Conf. on AI-enabled UAVs &amp; IoT for Critical Services',
+        cv_job_dev_line: '<strong>Independent Software Developer</strong> - Personal Projects', cv_job_dev_d: '2022 - Present',
+        cv_job_dev_desc: '· Project Atlas: full hardware drone build (frame, ESC, FC, motors) with custom C++ firmware and flight testing<br>· SAR-UGV Platform: multi-agent search &amp; rescue on real OSM graphs, risk-weighted A*, 4 agents, 92% mission success<br>· AudioWeb: self-hosted YouTube to MP3 platform, WebGL visualizer, 10-band EQ, Docker stack',
+        cv_lang_h: 'LANGUAGES',
+        cv_job_acc_line: '<strong>Accounting &amp; Administrative Support</strong> - Psimadas Marinos Nikolaos, Agrinio',
+        cv_job_acc_d: 'Jan 2019 - Dec 2021',
+        cv_job_acc_desc: '· Handled daily accounting transactions, document filing and financial records management<br>· Administrative and secretarial support in a professional office environment<br>· Developed organisational skills and experience with client-facing financial communication',
         cv_exp_h: 'PROFESSIONAL EXPERIENCE',
         cv_job1_line: '<strong>Accounting Office Assistant</strong> - Psimadas Marinos Nikolaos, Agrinio', cv_job1_d: 'Jan 2019 - Dec 2021',
         cv_job1_p: 'Sorting, filing, accounting transactions, secretarial support.',
@@ -2516,11 +2538,11 @@
       el: {
         nav_about: 'Σχετικά', nav_projects: 'Έργα', nav_skills: 'Δεξιότητες', nav_education: 'Εκπαίδευση', nav_contact: 'Επικοινωνία',
         hero_eyebrow: 'Αθήνα, Ελλάδα &nbsp;&middot;&nbsp; Υποψήφιος ΠΜΣ &nbsp;&middot;&nbsp; Αναζητώ ευκαιρίες',
-        hero_desc: 'Αναπτύσσω αυτόνομα συστήματα εξαρχής, από <strong>firmware ελεγκτή πτήσης σε C++</strong> έως <strong>αυτο-εποπτευόμενα μοντέλα LSTM για ανάκτηση σμήνους UAV χωρίς GPS</strong>. Μόλις αποφοίτησα, αναζητώ την κατάλληλη ομάδα για να χτίσουμε κάτι σημαντικό.',
-        pill_msc: 'ΥΠΟΨ. ΠΜΣ', pill_drone: 'ΚΑΤΑΣΚΕΥΗ DRONE', pill_ml: 'ΈΡΕΥΝΑ ML', btn_projects: 'Δες τα Έργα',
+        hero_desc: 'Αναπτύσσω συστήματα εξαρχής: από <strong>firmware ελεγκτή πτήσης σε C++</strong> έως <strong>αυτο-εποπτευόμενα μοντέλα LSTM, ML pipelines, AI agents και full-stack πλατφόρμες</strong>. Μόλις αποφοίτησα, αναζητώ την κατάλληλη ομάδα για να χτίσουμε κάτι.',
+        pill_msc: 'ΥΠΟΨ. ΠΜΣ', pill_drone: 'HARDWARE + AI', pill_ml: 'ΈΡΕΥΝΑ ML', btn_projects: 'Δες τα Έργα',
         sec_about: 'Σχετικά',
         about_p1: 'Είμαι πτυχιούχος Πληροφορικής από το Χαροκόπειο Πανεπιστήμιο Αθηνών και ολοκληρώνω το ΠΜΣ μου στο Χαροκόπειο Πανεπιστήμιο Αθηνών. Η διπλωματική μου ασχολείται με την πρόβλεψη συνδεσιμότητας και την ανάκτηση διαδρομής σε δίκτυα UAV χωρίς GPS, συνδυάζοντας αυτο-εποπτευόμενη εκμάθηση LSTM με ενισχυτική μάθηση PPO. Η κατάθεση αναμένεται σε περίπου 2 μήνες.',
-        about_p2: 'Η δουλειά με τα drone φτάνει μέχρι τα βασικά: συναρμολόγησα τετρακόπτερο από μηδέν, έγραψα το firmware του ελεγκτή πτήσης εξαρχής σε C++ (Madgwick AHRS, cascade PID, DShot600 μέσω DMA), και ανέπτυξα την Android εφαρμογή τηλεμετρίας σε Godot 4 με πλήρη MAVLink v2 FSM parser.',
+        about_p2: 'Η δουλειά με τα drone ξεπερνά τα βασικά: συναρμολόγησα τετρακόπτερο από μηδέν, έγραψα το firmware του ελεγκτή πτήσης εξαρχής σε C++ (Madgwick AHRS, cascade PID, DShot600 μέσω DMA), και ανέπτυξα την Android εφαρμογή τηλεμετρίας σε Godot 4 με πλήρη MAVLink v2 FSM parser.',
         about_p3: 'Στο λογισμικό, έχω παραδώσει full-stack πλατφόρμες, agentic RAG pipelines, CI/CD υποδομή με Kubernetes, εργαλεία audio DSP σε πραγματικό χρόνο, και γραφοθεωρητικές προσομοιώσεις SAR. Εργάζομαι πιο φυσικά στην τομή <strong>ενσωματωμένων συστημάτων, εφαρμοσμένης ML και backend engineering</strong>.',
         about_p4: 'Στον τρόπο που εργάζομαι χρησιμοποιώ έντονα την ΤΝ ως πολλαπλασιαστή δυνάμεων για ιδέες, ανάλυση και υλοποίηση, στηρίζοντας πάντα τις αποφάσεις στην υποκείμενη θεωρία. Η φύση μου είναι να βρίσκω πρακτικές βελτιώσεις, να οργανώνω συστήματα που λειτουργούν και να κάνω τα πράγματα προσβάσιμα ακόμα και σε λιγότερο έμπειρους χρήστες. Στον επαγγελματικό χώρο, στοχεύω να δοκιμάσω πραγματικές δεξιότητες, να μάθω σε βάθος τη ροή εργασίας της ομάδας και να εξελιχθώ.',
         stat_bsc_lbl: 'Βαθμός Πτυχίου', stat_msc_lbl: 'Μαθήματα ΠΜΣ', stat_proj_lbl: 'Υλοποιημένα Έργα', stat_sub_lbl: 'ως Κατάθεση ΠΜΣ',
@@ -2575,17 +2597,34 @@
         ach3_title: 'Πτυχιακή 10/10', ach3_sub: 'Σχεδιασμός αλγορίθμων για συνεργατικά UAV σε SAR επιχειρήσεις',
         ach4_title: '', ach4_sub: 'Χαροκόπειο Πανεπιστήμιο Αθηνών, τάξη 2025',
         sec_contact: 'Επικοινωνία', contact_heading: 'Ας χτίσουμε κάτι μαζί.',
-        contact_desc: 'Ολοκληρώνω το ΠΜΣ μου και αναζητώ ενεργά <strong>θέσεις μηχανικού</strong> σε αυτόνομα συστήματα, ML infrastructure ή ενσωματωμένο λογισμικό. Χαίρομαι να συζητήσω για έρευνα, drones ή backends.',
+        contact_desc: 'Ολοκληρώνω το ΠΜΣ μου και αναζητώ ενεργά <strong>θέσεις μηχανικού</strong> σε αυτόνομα συστήματα, ML infrastructure ή ενσωματωμένο λογισμικό. Χαίρομαι να συζητήσω για έρευνα, UVs ή backends.',
         footer_loc: 'Αθήνα, Ελλάδα',
         nav_cv: 'CV', sec_cv: 'Βιογραφικό Σημείωμα',
         cv_dl: '&#8659; Λήψη CV', cv_view_online: 'Δες Online &#8599;', cv_to_projects: '&#8593; Έργα', cv_print: '&#9113; Εκτύπωση',
         cv_fullname: 'ΣΠΥΡΙΔΩΝ ΤΣΙΛΙΜΠΩΚΟΣ',
-        cv_summary: 'Απόφοιτος Πληροφορικής &amp; Τηλεματικής (BSc) και μεταπτυχιακός φοιτητής Επιστήμης Δεδομένων &amp; ΤΝ (MSc) - Χαροκόπειο Πανεπιστήμιο. Εστιάζω στο σχεδιασμό αλγορίθμων αυτόνομων συστημάτων, big data pipelines, ML και full-stack ανάπτυξη. Προσαρμόζομαι γρήγορα σε νέες τεχνολογίες και εργάζομαι αποτελεσματικά τόσο ανεξάρτητα όσο και ομαδικά.',
+        cv_summary: 'Αναπτύσσω συστήματα εξαρχής: από firmware ελεγκτή πτήσης σε C++ και αυτο-εποπτευόμενα μοντέλα LSTM, έως ML pipelines, αρχιτεκτονικές AI agents και full-stack εφαρμογές παραγωγής. Μόλις αποφοίτησα - αναζητώ την κατάλληλη ομάδα για να χτίσουμε κάτι σημαντικό.',
         cv_edu_h: 'ΕΚΠΑΙΔΕΥΣΗ', cv_edu_bsc: '<strong>BSc Πληροφορική &amp; Τηλεματική</strong> - Χαροκόπειο Πανεπιστήμιο',
         cv_edu_msc: '<strong>MSc Επιστήμη Δεδομένων &amp; ΤΝ</strong> - Χαροκόπειο Πανεπιστήμιο',
+        cv_edu_scholarship: 'Υποτροφία Γ. Καραμπατζή - απονεμήθηκε για σπουδές ΠΜΣ',
         cv_edu_uas: '<em>Σχεδίαση και Ανάπτυξη Μη-Επανδρωμένων Εναέριων Συστημάτων (UAS)</em> - ΕΚΠΑ',
         cv_edu_ent: '<em>Επιχειρηματικότητα και Διαμόρφωση Στρατηγικής για το Μέλλον σε Περιβάλλον Αβεβαιότητας</em> - ΕΚΠΑ',
-        cv_proj_h: 'ΒΑΣΙΚΑ PROJECTS (Ολοκληρωμένα &amp;/ή σε Εξέλιξη)', cv_skills_h: 'ΤΕΧΝΙΚΕΣ ΔΕΞΙΟΤΗΤΕΣ', cv_sk_lang: 'Γλώσσες:',
+        cv_research_h: 'ΈΡΕΥΝΑ &amp; ΔΗΜΟΣΙΕΥΣΕΙΣ',
+        cv_res1_line: '<strong>Poster - Hellenic Robotics Forum 2026 (#0083)</strong>', cv_res1_d: '2026',
+        cv_res1_desc: 'SAR-UGV: Πολυ-πρακτορική SAR σε πραγματικά οδικά δίκτυα OSM. A* με βάρη κινδύνου, 4 αυτόνομοι πράκτορες, 92% επιτυχία σε 50 σενάρια.',
+        cv_res2_line: '<strong>Διπλωματική ΠΜΣ</strong> - Χαροκόπειο Πανεπιστήμιο', cv_res2_d: '2025 - 2026',
+        cv_res2_desc: 'AI_Recovery: Πρόβλεψη συνδεσιμότητας &amp; ανάκτηση διαδρομής σε δίκτυα SD-UAV. Σε εξέλιξη.',
+        cv_res3_line: '<strong>Πτυχιακή Εργασία</strong> - Χαροκόπειο Πανεπιστήμιο', cv_res3_d: '2021 - 2025',
+        cv_res3_desc: 'Συνεργατική προσομοίωση SAR πολλαπλών οχημάτων. Python/Pygame, 3 τύποι οχημάτων, 6 συνεργατικά σενάρια.',
+        cv_proj_h: 'ΕΠΙΛΕΓΜΕΝΑ ΕΡΓΑ (Ολοκληρωμένα &amp;/ή σε Εξέλιξη)', cv_skills_h: 'ΤΕΧΝΙΚΕΣ ΔΕΞΙΟΤΗΤΕΣ', cv_sk_lang: 'Γλώσσες:',
+        cv_job_ra_line: '<strong>Ερευνητικός Συνεργάτης</strong> - Χαροκόπειο Πανεπιστήμιο', cv_job_ra_d: 'Σεπτ 2025 - Παρόν',
+        cv_job_ra_sub: 'σε συνεργασία με Στρατιωτική Σχολή Ευελπίδων (ΣΣΕ)',
+        cv_job_ra_desc: '· Ανάπτυξη αλγορίθμων AI_Recovery: πρόβλεψη συνδεσιμότητας &amp; ανάκτηση διαδρομής σε δίκτυα SD-UAV (Διπλωματική ΠΜΣ)<br>· Αποδοχή &amp; παρουσίαση poster - Hellenic Robotics Forum 2026 (HRF 2026)<br>· Υποβολή εργασίας στο IEEE Vehicular Technology Conference (IEEE VTC) - υπό αξιολόγηση<br>· Προετοιμασία υποβολής - IARIA: 2ο Διεθν. Συν. για AI-enabled UAVs &amp; IoT για Κρίσιμες Υπηρεσίες',
+        cv_job_dev_line: '<strong>Ανεξάρτητος Προγραμματιστής</strong> - Προσωπικά Έργα', cv_job_dev_d: '2022 - Παρόν',
+        cv_job_dev_desc: '· Project Atlas: πλήρης κατασκευή drone (πλαίσιο, ESC, FC, κινητήρες) με custom firmware C++ και δοκιμές πτήσης<br>· SAR-UGV: πολυ-πρακτορική SAR σε πραγματικούς χάρτες OSM, A* με βάρη κινδύνου, 4 πράκτορες, 92% επιτυχία<br>· AudioWeb: πλατφόρμα YouTube σε MP3 με WebGL visualizer, 10-band EQ, Docker stack',
+        cv_lang_h: 'ΓΛΩΣΣΕΣ',
+        cv_job_acc_line: '<strong>Λογιστική &amp; Διοικητική Υποστήριξη</strong> - Ψημάδας Μαρίνος Νικόλαος, Αγρίνιο',
+        cv_job_acc_d: 'Ιαν 2019 - Δεκ 2021',
+        cv_job_acc_desc: '· Χειρισμός καθημερινών λογιστικών συναλλαγών, αρχειοθέτησης εγγράφων και τήρησης οικονομικών αρχείων<br>· Διοικητική και γραμματειακή υποστήριξη σε επαγγελματικό περιβάλλον γραφείου<br>· Ανάπτυξη οργανωτικών δεξιοτήτων και εμπειρίας σε επικοινωνία με πελάτες',
         cv_exp_h: 'ΕΠΑΓΓΕΛΜΑΤΙΚΗ ΕΜΠΕΙΡΙΑ',
         cv_job1_line: '<strong>Βοηθός Λογιστικού Γραφείου</strong> - Ψειμαδάς Μαρίνος Νικόλαος, Αγρίνιο', cv_job1_d: 'Ιαν 2019 - Δεκ 2021',
         cv_job1_p: 'Ταξινόμηση, αρχειοθέτηση, λογιστικές συναλλαγές, γραμματειακή υποστήριξη.',
@@ -2607,103 +2646,50 @@
 
     //  CV Projects ─
     const cvProjects = [
-      {
-        t_en: 'SAR UMS Simulation Platform', t_el: 'SAR UMS Simulation Platform',
-        d_en: 'Full-stack simulator of autonomous search &amp; rescue vehicles on real OSM maps.',
-        d_el: 'Full-stack προσομοιωτής αυτόνομων οχημάτων έρευνας &amp; διάσωσης σε πραγματικούς χάρτες OSM.',
-        stack: 'FastAPI | Python | Docker | A* Pathfinding | NetworkX | Leaflet.js | Chart.js | OpenStreetMap'
-      },
-      {
-        t_en: 'AudioWeb', t_el: 'AudioWeb',
-        d_en: 'YouTube to MP3 conversion platform with cloud library, in-browser player &amp; WebGL visualizer.',
-        d_el: 'Πλατφόρμα μετατροπής YouTube σε MP3 με cloud βιβλιοθήκη, in-browser player &amp; WebGL visualizer.',
-        stack: 'Flask | MinIO (S3) | PostgreSQL | Docker | yt-dlp | Web Audio API | Butterchurn'
-      },
-      {
-        t_en: 'Thesis (10/10):', t_el: 'Πτυχιακή (10/10):',
-        d_en: 'Algorithms for managing unmanned vehicles for search &amp; rescue missions.',
-        d_el: 'Αλγόριθμοι διαχείρισης μη-επανδρωμένων οχημάτων για αποστολές έρευνας &amp; διάσωσης.',
-        stack: ''
-      },
-      {
-        t_en: 'Big Data - Entity Resolution (Grade 9)', t_el: 'Big Data - Entity Resolution (Βαθμός 9)',
-        d_en: '', d_el: '', stack: 'PySpark | Jaccard Similarity | F1 > 0.87'
-      },
-      {
-        t_en: 'Graph DB &amp; ETL - Shakespeare (Grade 9)', t_el: 'Graph DB &amp; ETL - Shakespeare (Βαθμός 9)',
-        d_en: '', d_el: '', stack: 'Neo4j | Cypher | Spark SQL | Docker'
-      },
-      {
-        t_en: 'ML - Netflix Recommendation System (Grade 9)', t_el: 'ML - Netflix Recommendation System (Βαθμός 9)',
-        d_en: '', d_el: '', stack: 'Python | TF-IDF | K-Means | Isolation Forest'
-      },
-      {
-        t_en: 'Data Mining - Air Traffic Prediction (Grade 10)', t_el: 'Data Mining - Air Traffic Prediction (Βαθμός 10)',
-        d_en: '', d_el: '', stack: 'KNIME | Random Forest | GBT | ~79% accuracy'
-      },
-      {
-        t_en: 'Distributed Systems - Crowdfunding (46.5/50)', t_el: 'Κατανεμημένα Συστήματα - Crowdfunding (46.5/50)',
-        d_en: '', d_el: '', stack: 'Vue.js | REST API | Backend/Frontend split'
-      },
-      {
-        t_en: 'DevOps - Pet Adoption Platform (Grade 10)', t_el: 'DevOps - Pet Adoption Platform (Βαθμός 10)',
-        d_en: '', d_el: '', stack: 'Docker | RabbitMQ | MinIO | Admin UI'
-      },
-      {
-        t_en: 'AI - Pacman Agents', t_el: 'ΤΝ - Pacman Agents (Βαθμός 10)',
-        d_en: '', d_el: '', stack: 'Search Algorithms | Python | Autonomous Agents'
-      },
-      {
-        t_en: 'CVD Risk Prediction - ATTICA Study (Grade 9)', t_el: 'CVD Risk Prediction - ATTICA Study (Βαθμός 9)',
-        d_en: '', d_el: '', stack: 'R | Logistic Regression | PCA | AUC 0.917'
-      },
-      {
-        t_en: 'Agentic RAG', t_el: 'Agentic RAG',
-        d_en: '', d_el: '', stack: 'Python | LangGraph | Chainlit | Qdrant | Docker'
-      },
-      {
-        t_en: 'CV - Computer Vision', t_el: 'CV - Computer Vision',
-        d_en: '', d_el: '', stack: 'Python | PyTorch | OpenCV | U-Net | CNN | ViT | SSIM'
-      },
-      {
-        t_en: 'Graph Classification - ENZYMES', t_el: 'Graph Classification - ENZYMES',
-        d_en: '', d_el: '', stack: 'Python | PyTorch Geometric | GCN | GIN | Node2Vec'
-      },
-      {
-        t_en: 'NLP &amp; IR - Reddit Clustering', t_el: 'NLP &amp; IR - Reddit Clustering',
-        d_en: '', d_el: '', stack: 'Python | TF-IDF | LSA | Word2Vec | Sentence Transformers | HDBSCAN'
-      },
-      {
-        t_en: 'MLP from Scratch', t_el: 'MLP from Scratch',
-        d_en: '', d_el: '', stack: 'Python | NumPy | Backpropagation | BCE Loss | Skip Connection'
-      },
-      {
-        t_en: 'Food-11 Image Classification', t_el: 'Food-11 Image Classification',
-        d_en: '', d_el: '', stack: 'Python | PyTorch | CNN | ResNet50 | VGG16 | DenseNet121'
-      },
-      {
-        t_en: 'Attention &amp; Transformer Analysis', t_el: 'Attention &amp; Transformer Analysis',
-        d_en: '', d_el: '', stack: 'Python | NumPy | PyTorch | HuggingFace | BERT | Self/Cross-Attention'
-      },
+      { t_en: 'SAR UMS Platform', t_el: 'SAR UMS Platform',
+        stack: 'FastAPI | Python | Docker | A* Pathfinding | NetworkX | Leaflet.js | OpenStreetMap' },
+      { t_en: 'AudioWeb', t_el: 'AudioWeb',
+        stack: 'Flask | MinIO (S3) | PostgreSQL | Docker | yt-dlp | Web Audio API | Butterchurn' },
+      { t_en: 'Agentic RAG', t_el: 'Agentic RAG',
+        stack: 'Python | LangGraph | Chainlit | Qdrant | Docker' },
+      { t_en: 'Project Atlas (Drone)', t_el: 'Project Atlas (Drone)',
+        stack: 'C++ | Madgwick AHRS | Cascade PID | DShot600 | DMA | MAVLink | Godot 4' },
+      { t_en: 'Big Data - Entity Resolution', t_el: 'Big Data - Entity Resolution',
+        stack: 'PySpark | Jaccard Similarity | F1 > 0.87' },
+      { t_en: 'Graph DB &amp; ETL - Shakespeare', t_el: 'Graph DB &amp; ETL - Shakespeare',
+        stack: 'Neo4j | Cypher | Spark SQL | Docker' },
+      { t_en: 'ML - Netflix Recommendation', t_el: 'ML - Netflix Recommendation',
+        stack: 'Python | TF-IDF | K-Means | Isolation Forest' },
+      { t_en: 'Data Mining - Air Traffic Prediction', t_el: 'Data Mining - Air Traffic Prediction',
+        stack: 'KNIME | Random Forest | GBT | ~79% accuracy' },
+      { t_en: 'Distributed Systems - Crowdfunding', t_el: 'Κατανεμημένα Συστήματα - Crowdfunding',
+        stack: 'Vue.js | REST API | Backend/Frontend split' },
+      { t_en: 'DevOps - Pet Adoption Platform', t_el: 'DevOps - Pet Adoption Platform',
+        stack: 'Docker | RabbitMQ | MinIO | Admin UI' },
+      { t_en: 'AI - Pacman Agents', t_el: 'ΤΝ - Pacman Agents',
+        stack: 'Search Algorithms | Python | Autonomous Agents' },
+      { t_en: 'CVD Risk Prediction - ATTICA Study', t_el: 'CVD Risk Prediction - ATTICA Study',
+        stack: 'R | Logistic Regression | PCA | AUC 0.917' },
+      { t_en: 'Computer Vision (U-Net / ViT)', t_el: 'Computer Vision (U-Net / ViT)',
+        stack: 'Python | PyTorch | OpenCV | CNN | ViT | SSIM' },
+      { t_en: 'Graph Classification - ENZYMES', t_el: 'Graph Classification - ENZYMES',
+        stack: 'Python | PyTorch Geometric | GCN | GIN | Node2Vec' },
+      { t_en: 'NLP &amp; IR - Reddit Clustering', t_el: 'NLP &amp; IR - Reddit Clustering',
+        stack: 'Python | TF-IDF | LSA | Word2Vec | HDBSCAN' },
+      { t_en: 'MLP from Scratch', t_el: 'MLP from Scratch',
+        stack: 'Python | NumPy | Backpropagation | BCE Loss | Skip Connection' },
+      { t_en: 'Food-11 Image Classification', t_el: 'Food-11 Image Classification',
+        stack: 'Python | PyTorch | CNN | ResNet50 | VGG16 | DenseNet121' },
+      { t_en: 'Attention &amp; Transformer Analysis', t_el: 'Attention &amp; Transformer Analysis',
+        stack: 'Python | NumPy | PyTorch | HuggingFace | BERT | Self/Cross-Attention' },
     ];
 
     function renderCVProjects() {
       const el = document.getElementById('cv-projects-list');
       if (!el) return;
       const l = (typeof lang !== 'undefined') ? lang : 'en';
-      const top = cvProjects.slice(0, 3);
-      const rest = cvProjects.slice(3);
-      let html = '';
-      top.forEach(p => {
-        const title = l === 'en' ? p.t_en : p.t_el;
-        const desc = l === 'en' ? p.d_en : p.d_el;
-        html += '<div class="cv-proj-full"><div><strong>' + title + '</strong>' +
-          (desc ? ' - ' + desc : '') + '</div>' +
-          (p.stack ? '<div class="cv-proj-stack-italic">' + p.stack + '</div>' : '') +
-          '</div>';
-      });
-      html += '<div class="cv-proj-table">';
-      rest.forEach(p => {
+      let html = '<div class="cv-proj-table">';
+      cvProjects.forEach(p => {
         const title = l === 'en' ? p.t_en : p.t_el;
         html += '<div class="cv-proj-name">' + title + '</div>';
         html += '<div class="cv-proj-stack-cell">' + p.stack + '</div>';
